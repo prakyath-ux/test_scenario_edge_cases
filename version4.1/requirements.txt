@@ -1,0 +1,11 @@
+# Core dependencies
+streamlit>=1.32.0
+pandas>=2.0.0
+playwright>=1.48.0
+
+# LLM Integration
+groq>=0.4.0
+python-dotenv>=1.0.0
+
+# Development
+jupyter>=1.0.0

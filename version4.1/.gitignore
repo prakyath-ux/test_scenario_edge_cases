@@ -1,0 +1,25 @@
+# Environment
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Runtime captures (sensitive data)
+data/captures/*.json
+data/captures/*.csv
+data/captures/*.jsonl
+data/captures/.recording_state.json
+data/captures/.live_capture.jsonl
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db

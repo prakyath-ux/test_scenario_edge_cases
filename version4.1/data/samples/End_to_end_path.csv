@@ -1,0 +1,299 @@
+﻿,Group,Element,Action,Value,Strategy,XPath
+0,Personal Information,firstName,click,,id,"//*[@id=""firstName""]"
+1,Personal Information,firstName,Input,PRAKYATHMC,id,"//*[@id=""firstName""]"
+2,Personal Information,email,click,,id,"//*[@id=""email""]"
+3,Personal Information,email,Input,P@GMAIL.COM,id,"//*[@id=""email""]"
+4,Personal Information,middleName,click,,id,"//*[@id=""middleName""]"
+5,Personal Information,middleName,Input,M,id,"//*[@id=""middleName""]"
+6,Personal Information,mobileNumber,click,,id,"//*[@id=""mobileNumber""]"
+7,Personal Information,mobileNumber,Input,124-3567,id,"//*[@id=""mobileNumber""]"
+8,Personal Information,lastName,click,,id,"//*[@id=""lastName""]"
+9,Personal Information,lastName,Input,CHANDRAN,id,"//*[@id=""lastName""]"
+10,Personal Information,Select Branch,click,,data-testid,"//*[@data-testid=""dropdown-button""]"
+11,Personal Information,100 - TECU - MARABELLA BRANCH,click,,data-testid,"//*[@data-testid=""option-0""]"
+12,Personal Information,Add profile picture,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Add profile picture"")]"
+13,Personal Information,Upload,click,,data-testid,"//*[@data-testid=""upload-button""]"
+14,Personal Information,file-upload,click,,id,"//*[@id=""file-upload""]"
+15,Personal Information,file-upload,Input,C:\fakepath\Screenshot 2026-01-27 at 1.02.56 PM.png,id,"//*[@id=""file-upload""]"
+16,Personal Information,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+17,Personal Information,otp-input-0,click,,id,"//*[@id=""otp-input-0""]"
+18,Personal Information,otp-input-0,Input,1,id,"//*[@id=""otp-input-0""]"
+19,Personal Information,otp-input-1,Input,2,id,"//*[@id=""otp-input-1""]"
+20,Personal Information,otp-input-2,Input,1,id,"//*[@id=""otp-input-2""]"
+21,Personal Information,otp-input-3,Input,2,id,"//*[@id=""otp-input-3""]"
+22,Personal Information,otp-input-4,Input,1,id,"//*[@id=""otp-input-4""]"
+23,Personal Information,otp-input-5,Input,2,id,"//*[@id=""otp-input-5""]"
+24,Personal Information,Verify OTP,click,,data-testid,"//*[@data-testid=""submit-button""]"
+25,Documents,Choose an option,click,,data-testid,"//*[@data-testid=""dropdown-button""]"
+26,Documents,Passport,click,,data-testid,"//*[@data-testid=""option-0""]"
+27,Documents,Select File,click,,data-testid,"//*[@data-testid=""file-upload-label""]"
+28,Documents,upload-front-input,click,,id,"//*[@id=""upload-front-input""]"
+29,Documents,upload-front-input,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""upload-front-input""]"
+30,Documents,Continue,click,,data-testid,"//*[@data-testid=""continue-button""]"
+31,Documents,Choose an option,click,,data-testid,"//*[@data-testid=""dropdown-button""]"
+32,Documents,National Identification Card,click,,data-testid,"//*[@data-testid=""option-1""]"
+33,Documents,Upload Front of ID,click,,data-testid,"//*[@data-testid=""file-upload-label""]"
+34,Documents,upload-front-input,click,,id,"//*[@id=""upload-front-input""]"
+35,Documents,upload-front-input,Input,C:\fakepath\DAVID_N_F.png,id,"//*[@id=""upload-front-input""]"
+36,Documents,Upload Back of ID,click,,data-testid,"//*[@data-testid=""file-upload-back-label""]"
+37,Documents,upload-back-input,click,,id,"//*[@id=""upload-back-input""]"
+38,Documents,upload-back-input,Input,C:\fakepath\DAVID_N_B.png,id,"//*[@id=""upload-back-input""]"
+39,Documents,Continue,click,,data-testid,"//*[@data-testid=""continue-button""]"
+40,Documents,Choose an option,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/button[1]
+41,Documents,FLOW BILL,click,,data-testid,"//*[@data-testid=""option-0""]"
+42,Documents,Select File,click,,data-testid,"//*[@data-testid=""file-upload-label""]"
+43,Documents,upload-front-input,click,,id,"//*[@id=""upload-front-input""]"
+44,Documents,upload-front-input,Input,C:\fakepath\FlowBill.jpg,id,"//*[@id=""upload-front-input""]"
+45,Documents,mailingCity,click,,id,"//*[@id=""mailingCity""]"
+46,Documents,mailingCity,Input,TRINCITY,id,"//*[@id=""mailingCity""]"
+47,Documents,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/div[1]/div[1]
+48,Documents,permanentAddressSameAsMailing,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/input[1]
+49,Documents,permanentAddressSameAsMailing,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/input[1]
+50,Documents,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/div[1]/div[1]
+51,Documents,utilityDocOption,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/input[1]
+52,Documents,utilityDocOption,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/input[1]
+53,Documents,Save and Continue,click,,data-testid,"//*[@data-testid=""save-and-continue-button""]"
+54,Additional Details,Select Employment Status,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select Employment Status"")]"
+55,Additional Details,FULL TIME PERMANENT,click,,data-testid,"//*[@data-testid=""option-0""]"
+56,Additional Details,Select Employer,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select Employer"")]"
+57,Additional Details,ABT ENGINEERS & CONSTRUCTORS L,click,,data-testid,"//*[@data-testid=""option-0""]"
+58,Additional Details,:rt:-year,click,,id,"//*[@id="":rt:-year""]"
+59,Additional Details,occupation,click,,id,"//*[@id=""occupation""]"
+60,Additional Details,occupation,Input,ENGINEER,id,"//*[@id=""occupation""]"
+61,Additional Details,Choose sector,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose sector"")]"
+62,Additional Details,PRIVATE SECTOR,click,,data-testid,"//*[@data-testid=""option-1""]"
+63,Additional Details,Choose Employment Type,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose Employment Type"")]"
+64,Additional Details,Agricultural,click,,data-testid,"//*[@data-testid=""option-0""]"
+65,Additional Details,employerAddressLine1,click,,id,"//*[@id=""employerAddressLine1""]"
+66,Additional Details,employerAddressLine1,Input,7 NORTHAM ROAD,id,"//*[@id=""employerAddressLine1""]"
+67,Additional Details,employerCity,click,,id,"//*[@id=""employerCity""]"
+68,Additional Details,employerCity,Input,TRINCITY,id,"//*[@id=""employerCity""]"
+69,Additional Details,Choose Country,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose Country"")]"
+70,Additional Details,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+71,Additional Details,workPhoneNo,click,,id,"//*[@id=""workPhoneNo""]"
+72,Additional Details,workPhoneNo,Input,324-3546,id,"//*[@id=""workPhoneNo""]"
+73,Additional Details,Choose an option,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]"
+74,Additional Details,"$12,001-$17,000",click,,data-testid,"//*[@data-testid=""option-0""]"
+75,Additional Details,Salary Frequency,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Salary Frequency"")]"
+76,Additional Details,ANNUALLY,click,,data-testid,"//*[@data-testid=""option-0""]"
+77,Additional Details,salary,click,,name,"//input[@name=""salary""]"
+78,Additional Details,salary,Input,"$ 13,000.00",name,"//input[@name=""salary""]"
+79,Additional Details,Account Funded,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Account Funded"")]"
+80,Additional Details,Via Salary,click,,data-testid,"//*[@data-testid=""option-0""]"
+81,Additional Details,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]
+82,Additional Details,nationalOfTTPrimary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+83,Additional Details,nationalOfTTPrimary,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+84,Additional Details,placeOfBirth,click,,id,"//*[@id=""placeOfBirth""]"
+85,Additional Details,placeOfBirth,Input,TRINCITY,id,"//*[@id=""placeOfBirth""]"
+86,Additional Details,Country of birth,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Country of birth"")]"
+87,Additional Details,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+88,Additional Details,Yes,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]
+89,Additional Details,nationalOfTTSecondary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1]
+90,Additional Details,nationalOfTTSecondary,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1]
+91,Additional Details,Marital Status,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Marital Status"")]"
+92,Additional Details,SINGLE,click,,data-testid,"//*[@data-testid=""option-5""]"
+93,Additional Details,Highest Level of Education,click,,data-testid+text,"//*[@data-testid=""dropdown-text"" and contains(., ""Highest Level of Education"")]"
+94,Additional Details,POSTGRADUATE DEGREE,click,,data-testid,"//*[@data-testid=""option-1""]"
+95,Additional Details,Communication Method,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Communication Method"")]"
+96,Additional Details,Email,click,,data-testid,"//*[@data-testid=""option-0""]"
+97,Additional Details,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[2]/div[1]/div[1]
+98,Additional Details,memberOfOtherCreditUnion,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[2]/input[1]
+99,Additional Details,memberOfOtherCreditUnion,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[2]/input[1]
+100,Additional Details,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+101,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+102,Other Products,hasBeneficiary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+103,Other Products,hasBeneficiary,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+104,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/label[3]/div[1]/div[1]
+105,Other Products,documentType,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/label[3]/input[1]
+106,Other Products,documentType,Input,BENEFICIARY-PASSPORT,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/label[3]/input[1]
+107,Other Products,Select Document,click,,class,"//label[contains(@class, ""rounded"")]"
+108,Other Products,upload-input,click,,id,"//*[@id=""upload-input""]"
+109,Other Products,upload-input,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""upload-input""]"
+110,Other Products,beneficiaryMobileNo,click,,id,"//*[@id=""beneficiaryMobileNo""]"
+111,Other Products,beneficiaryMobileNo,Input,567-7777,id,"//*[@id=""beneficiaryMobileNo""]"
+112,Other Products,Select relation,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select relation"")]"
+113,Other Products,Brother,click,,data-testid,"//*[@data-testid=""option-0""]"
+114,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/div[1]
+115,Other Products,hasJointPartner,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/input[1]
+116,Other Products,hasJointPartner,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/input[1]
+117,Other Products,path,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/svg[1]/path[1]
+118,Other Products,customerId,click,,id,"//*[@id=""customerId""]"
+119,Other Products,customerId,Input,121668,id,"//*[@id=""customerId""]"
+120,Other Products,:r1l:-year,click,,id,"//*[@id="":r1l:-year""]"
+121,Other Products,Search,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Search"")]"
+122,Other Products,Select relation,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select relation"")]"
+123,Other Products,Brother,click,,data-testid,"//*[@data-testid=""option-0""]"
+124,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[35]/div[1]/div[1]/label[3]/div[1]/div[1]
+125,Other Products,jointPartnerDocumentType,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[35]/div[1]/div[1]/label[3]/input[1]
+126,Other Products,jointPartnerDocumentType,Input,JOINT-PARTNER-PASSPORT,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[35]/div[1]/div[1]/label[3]/input[1]
+127,Other Products,Select Document,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[35]/div[2]/div[3]/div[1]/label[1]
+128,Other Products,jp-upload-input,click,,id,"//*[@id=""jp-upload-input""]"
+129,Other Products,jp-upload-input,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""jp-upload-input""]"
+130,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/label[1]/div[1]/div[1]
+131,Other Products,isApplyingForLincuCardApplication,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/label[1]/input[1]
+132,Other Products,isApplyingForLincuCardApplication,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/label[1]/input[1]
+133,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+134,Other Products,isApplyingForFipApplication,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/label[1]/input[1]
+135,Other Products,isApplyingForFipApplication,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/label[1]/input[1]
+136,Other Products,Choose an option,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]"
+137,Other Products,Plan A,click,,data-testid,"//*[@data-testid=""option-0""]"
+138,Other Products,deductionTypeDesc,click,,name,"//input[@name=""deductionTypeDesc""]"
+139,Other Products,deductionTypeDesc,Input,True,name,"//input[@name=""deductionTypeDesc""]"
+140,Other Products,Select,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[10]/div[1]/div[1]/button[1]
+141,Other Products,1,click,,data-testid,"//*[@data-testid=""option-0""]"
+142,Other Products,Choose an option,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[1]/div[2]/div[1]/button[1]
+143,Other Products,Passport,click,,data-testid,"//*[@data-testid=""option-2""]"
+144,Other Products,Select Document,click,,class,"//label[contains(@class, ""hover:bg-[#cf6d18]"")]"
+145,Other Products,upload-input-0,click,,id,"//*[@id=""upload-input-0""]"
+146,Other Products,upload-input-0,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""upload-input-0""]"
+147,Other Products,address-0,click,,id,"//*[@id=""address-0""]"
+148,Other Products,address-0,Input,71 NORTHAM ROAD,id,"//*[@id=""address-0""]"
+149,Other Products,phoneNumber-0,click,,id,"//*[@id=""phoneNumber-0""]"
+150,Other Products,phoneNumber-0,Input,333-3333,id,"//*[@id=""phoneNumber-0""]"
+151,Other Products,Choose an option,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]"
+152,Other Products,Parent / Parent-in-Law,click,,data-testid,"//*[@data-testid=""option-0""]"
+153,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+154,Other Products,hasRecommender,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/label[1]/input[1]
+155,Other Products,hasRecommender,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/label[1]/input[1]
+156,Other Products,groupHealth,click,,name,"//input[@name=""groupHealth""]"
+157,Other Products,groupHealth,Input,True,name,"//input[@name=""groupHealth""]"
+158,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[3]/div[1]/div[1]/label[1]/div[1]/div[1]
+159,Other Products,isSpouseCoveredByOtherPlan,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[3]/div[1]/div[1]/label[1]/input[1]
+160,Other Products,isSpouseCoveredByOtherPlan,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[3]/div[1]/div[1]/label[1]/input[1]
+161,Other Products,planName,click,,id,"//*[@id=""planName""]"
+162,Other Products,planName,Input,ABCD,id,"//*[@id=""planName""]"
+163,Other Products,insuranceCompany,click,,id,"//*[@id=""insuranceCompany""]"
+164,Other Products,insuranceCompany,Input,LIFE,id,"//*[@id=""insuranceCompany""]"
+165,Other Products,Select Bank,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select Bank"")]"
+166,Other Products,FIRST CITIZENS BANK,click,,data-testid,"//*[@data-testid=""option-0""]"
+167,Other Products,branchName,click,,id,"//*[@id=""branchName""]"
+168,Other Products,branchName,Input,TRINCITY,id,"//*[@id=""branchName""]"
+169,Other Products,accountNo,click,,id,"//*[@id=""accountNo""]"
+170,Other Products,accountNo,Input,111222333444555,id,"//*[@id=""accountNo""]"
+171,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[5]/div[2]/div[1]/div[1]/label[1]/div[1]/div[1]
+172,Other Products,accountType,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[5]/div[2]/div[1]/div[1]/label[1]/input[1]
+173,Other Products,accountType,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[5]/div[2]/div[1]/div[1]/label[1]/input[1]
+174,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+175,Other Products,addDependent,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+176,Other Products,addDependent,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+177,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+178,Other Products,dependent-0-isTecuMember,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/input[1]
+179,Other Products,dependent-0-isTecuMember,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/input[1]
+180,Other Products,Choose an option,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]"
+181,Other Products,Passport,click,,data-testid,"//*[@data-testid=""option-0""]"
+182,Other Products,Select File,click,,class,"//label[contains(@class, ""border"")]"
+183,Other Products,dependent-0-upload,click,,id,"//*[@id=""dependent-0-upload""]"
+184,Other Products,dependent-0-upload,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""dependent-0-upload""]"
+185,Other Products,circle,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[2]/div[4]/div[1]/div[1]/svg[1]/circle[2]
+186,Other Products,customerId,click,,id,"//*[@id=""customerId""]"
+187,Other Products,customerId,Input,121660,id,"//*[@id=""customerId""]"
+188,Other Products,:r2h:-year,click,,id,"//*[@id="":r2h:-year""]"
+189,Other Products,Search,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Search"")]"
+190,Other Products,Select relation,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select relation"")]"
+191,Other Products,Spouse,click,,data-testid,"//*[@data-testid=""option-0""]"
+192,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+193,Other Products,beneficiary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+194,Other Products,beneficiary,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+195,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[1]/div[1]/div[1]/label[2]/div[1]/div[1]
+196,Other Products,beneficiary-0-isTecuMember,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[1]/div[1]/div[1]/label[2]/input[1]
+197,Other Products,beneficiary-0-isTecuMember,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[1]/div[1]/div[1]/label[2]/input[1]
+198,Other Products,Choose an option,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]"
+199,Other Products,Passport,click,,data-testid,"//*[@data-testid=""option-0""]"
+200,Other Products,Select File,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[3]/div[1]/div[1]/div[1]/label[1]
+201,Other Products,beneficiary-0-upload,click,,id,"//*[@id=""beneficiary-0-upload""]"
+202,Other Products,beneficiary-0-upload,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""beneficiary-0-upload""]"
+203,Other Products,beneficiaryMobileNo0,click,,id,"//*[@id=""beneficiaryMobileNo0""]"
+204,Other Products,beneficiaryMobileNo0,Input,777-6665,id,"//*[@id=""beneficiaryMobileNo0""]"
+205,Other Products,beneficiaryAddressLine10,click,,id,"//*[@id=""beneficiaryAddressLine10""]"
+206,Other Products,beneficiaryAddressLine10,Input,7NORTHAM STREET,id,"//*[@id=""beneficiaryAddressLine10""]"
+207,Other Products,beneficiaryCity0,click,,id,"//*[@id=""beneficiaryCity0""]"
+208,Other Products,beneficiaryCity0,Input,TRINCITY,id,"//*[@id=""beneficiaryCity0""]"
+209,Other Products,beneficiaryPercentage0,click,,id,"//*[@id=""beneficiaryPercentage0""]"
+210,Other Products,beneficiaryPercentage0,Input,100,id,"//*[@id=""beneficiaryPercentage0""]"
+211,Other Products,isAllInformationCorrect,click,,name,"//input[@name=""isAllInformationCorrect""]"
+212,Other Products,isAllInformationCorrect,Input,True,name,"//input[@name=""isAllInformationCorrect""]"
+213,Other Products,isTermsAndConditionsAccepted,click,,name,"//input[@name=""isTermsAndConditionsAccepted""]"
+214,Other Products,Accept,click,,text,"//button[contains(., ""Accept"")]"
+215,Other Products,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+216,Other Products,Select relation,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select relation"")]"
+217,Other Products,Son,click,,data-testid,"//*[@data-testid=""option-1""]"
+218,Other Products,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+219,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[2]/div[1]/div[1]
+220,PEP / FATCA,isHeadOfState,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[2]/input[1]
+221,PEP / FATCA,isHeadOfState,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[2]/input[1]
+222,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[2]/div[1]/div[1]
+223,PEP / FATCA,isHeadOfGovt,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[2]/input[1]
+224,PEP / FATCA,isHeadOfGovt,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[2]/input[1]
+225,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/label[2]/div[1]/div[1]
+226,PEP / FATCA,isSenPolitician,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/label[2]/input[1]
+227,PEP / FATCA,isSenPolitician,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/label[2]/input[1]
+228,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[2]/div[1]
+229,PEP / FATCA,isSenGovtOfficial,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[2]/input[1]
+230,PEP / FATCA,isSenGovtOfficial,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[2]/input[1]
+231,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/label[2]/div[1]/div[1]
+232,PEP / FATCA,isSenJudicialOfficial,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/label[2]/input[1]
+233,PEP / FATCA,isSenJudicialOfficial,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/label[2]/input[1]
+234,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/label[2]/div[1]
+235,PEP / FATCA,isSenMilitaryOfficial,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/label[2]/input[1]
+236,PEP / FATCA,isSenMilitaryOfficial,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/label[2]/input[1]
+237,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/label[2]/div[1]
+238,PEP / FATCA,isSenExecSOC,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/label[2]/input[1]
+239,PEP / FATCA,isSenExecSOC,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/label[2]/input[1]
+240,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/label[2]/div[1]/div[1]
+241,PEP / FATCA,isImpPPO,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/label[2]/input[1]
+242,PEP / FATCA,isImpPPO,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/label[2]/input[1]
+243,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/label[2]/div[1]
+244,PEP / FATCA,isImmediateFamily,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/label[2]/input[1]
+245,PEP / FATCA,isImmediateFamily,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/label[2]/input[1]
+246,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/label[2]/div[1]/div[1]
+247,PEP / FATCA,isMemberOfSeniorManagement,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/label[2]/input[1]
+248,PEP / FATCA,isMemberOfSeniorManagement,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/label[2]/input[1]
+249,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[11]/div[2]/div[1]/label[2]/div[1]/div[1]
+250,PEP / FATCA,isPepAssociate,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[11]/div[2]/div[1]/label[2]/input[1]
+251,PEP / FATCA,isPepAssociate,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[11]/div[2]/div[1]/label[2]/input[1]
+252,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/label[2]/div[1]/div[1]
+253,PEP / FATCA,isCitizenOfOtherCountry,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/label[2]/input[1]
+254,PEP / FATCA,isCitizenOfOtherCountry,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/label[2]/input[1]
+255,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/label[2]/div[1]/div[1]
+256,PEP / FATCA,isGreenCardHolder,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/label[2]/input[1]
+257,PEP / FATCA,isGreenCardHolder,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/label[2]/input[1]
+258,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/label[2]/div[1]
+259,PEP / FATCA,isGranteePOA,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/label[2]/input[1]
+260,PEP / FATCA,isGranteePOA,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/label[2]/input[1]
+261,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/label[2]/div[1]/div[1]
+262,PEP / FATCA,hasStandingInstructIncome,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/label[2]/input[1]
+263,PEP / FATCA,hasStandingInstructIncome,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/label[2]/input[1]
+264,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/label[2]/div[1]/div[1]
+265,PEP / FATCA,isDisclosureTaxResidency,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/label[2]/input[1]
+266,PEP / FATCA,isDisclosureTaxResidency,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/label[2]/input[1]
+267,PEP / FATCA,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+268,PDF / Other Details,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/button[1]
+269,PDF / Other Details,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/button[1]
+270,PDF / Other Details,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/button[1]
+271,PDF / Other Details,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[4]/button[1]
+272,PDF / Other Details,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[5]/button[1]
+273,PDF / Other Details,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[6]/button[1]
+274,PDF / Other Details,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[7]/button[1]
+275,PDF / Other Details,Select File,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]
+276,PDF / Other Details,1.-job-letter-(less-than-3-months-old),click,,id,"//*[@id=""1.-job-letter-(less-than-3-months-old)""]"
+277,PDF / Other Details,1.-job-letter-(less-than-3-months-old),Input,C:\fakepath\FlowBill.jpg,id,"//*[@id=""1.-job-letter-(less-than-3-months-old)""]"
+278,PDF / Other Details,Select File,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]
+279,PDF / Other Details,2.-pay-slip-(less-than-1-month-old),click,,id,"//*[@id=""2.-pay-slip-(less-than-1-month-old)""]"
+280,PDF / Other Details,2.-pay-slip-(less-than-1-month-old),Input,C:\fakepath\FlowBill.jpg,id,"//*[@id=""2.-pay-slip-(less-than-1-month-old)""]"
+281,PDF / Other Details,Submit,click,,data-testid,"//*[@data-testid=""button""]"
+282,PDF / Other Details,otp-input-0,click,,id,"//*[@id=""otp-input-0""]"
+283,PDF / Other Details,otp-input-0,Input,1,id,"//*[@id=""otp-input-0""]"
+284,PDF / Other Details,otp-input-1,Input,2,id,"//*[@id=""otp-input-1""]"
+285,PDF / Other Details,otp-input-2,Input,1,id,"//*[@id=""otp-input-2""]"
+286,PDF / Other Details,otp-input-3,Input,2,id,"//*[@id=""otp-input-3""]"
+287,PDF / Other Details,otp-input-4,Input,1,id,"//*[@id=""otp-input-4""]"
+288,PDF / Other Details,otp-input-5,Input,2,id,"//*[@id=""otp-input-5""]"
+289,PDF / Other Details,Verify OTP,click,,data-testid,"//*[@data-testid=""submit-button""]"
+290,PDF / Other Details,otp-input-0,click,,id,"//*[@id=""otp-input-0""]"
+291,PDF / Other Details,otp-input-0,Input,1,id,"//*[@id=""otp-input-0""]"
+292,PDF / Other Details,otp-input-1,Input,2,id,"//*[@id=""otp-input-1""]"
+293,PDF / Other Details,otp-input-2,Input,1,id,"//*[@id=""otp-input-2""]"
+294,PDF / Other Details,otp-input-3,Input,2,id,"//*[@id=""otp-input-3""]"
+295,PDF / Other Details,otp-input-4,Input,1,id,"//*[@id=""otp-input-4""]"
+296,PDF / Other Details,otp-input-5,Input,2,id,"//*[@id=""otp-input-5""]"
+297,PDF / Other Details,Verify OTP,click,,data-testid,"//*[@data-testid=""submit-button""]"

@@ -1,0 +1,746 @@
+﻿,Group,Element,Action,Value,Strategy,XPath
+0,Contact Info,firstName,click,,id,"//*[@id=""firstName""]"
+1,Contact Info,firstName,Input,PRAKYATH,id,"//*[@id=""firstName""]"
+2,Contact Info,email,click,,id,"//*[@id=""email""]"
+3,Contact Info,email,Input,PRAK@GMAIL.COM,id,"//*[@id=""email""]"
+4,Contact Info,middleName,click,,id,"//*[@id=""middleName""]"
+5,Contact Info,middleName,Input,M,id,"//*[@id=""middleName""]"
+6,Contact Info,mobileNumber,click,,id,"//*[@id=""mobileNumber""]"
+7,Contact Info,mobileNumber,Input,234-5432,id,"//*[@id=""mobileNumber""]"
+8,Contact Info,lastName,click,,id,"//*[@id=""lastName""]"
+9,Contact Info,lastName,Input,CHAN,id,"//*[@id=""lastName""]"
+10,Contact Info,Select Branch,click,,data-testid,"//*[@data-testid=""dropdown-button""]"
+11,Contact Info,100 - TECU - MARABELLA BRANCH,click,,data-testid,"//*[@data-testid=""option-0""]"
+12,Contact Info,Add profile picture,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Add profile picture"")]"
+13,Contact Info,Upload,click,,data-testid,"//*[@data-testid=""upload-button""]"
+14,Contact Info,file-upload,click,,id,"//*[@id=""file-upload""]"
+15,Contact Info,file-upload,Input,C:\fakepath\Screenshot 2026-01-27 at 1.02.56 PM.png,id,"//*[@id=""file-upload""]"
+16,Contact Info,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+17,Contact Info,otp-input-0,click,,id,"//*[@id=""otp-input-0""]"
+18,Contact Info,otp-input-0,Input,1,id,"//*[@id=""otp-input-0""]"
+19,Contact Info,otp-input-1,Input,2,id,"//*[@id=""otp-input-1""]"
+20,Contact Info,otp-input-2,Input,1,id,"//*[@id=""otp-input-2""]"
+21,Contact Info,otp-input-3,Input,2,id,"//*[@id=""otp-input-3""]"
+22,Contact Info,otp-input-4,Input,1,id,"//*[@id=""otp-input-4""]"
+23,Contact Info,otp-input-5,Input,2,id,"//*[@id=""otp-input-5""]"
+24,Contact Info,Verify OTP,click,,data-testid,"//*[@data-testid=""submit-button""]"
+25,Documents,Choose an option,click,,data-testid,"//*[@data-testid=""dropdown-button""]"
+26,Documents,Passport,click,,data-testid,"//*[@data-testid=""option-0""]"
+27,Documents,Select File,click,,data-testid,"//*[@data-testid=""file-upload-label""]"
+28,Documents,upload-front-input,click,,id,"//*[@id=""upload-front-input""]"
+29,Documents,upload-front-input,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""upload-front-input""]"
+30,Documents,Continue,click,,data-testid,"//*[@data-testid=""continue-button""]"
+31,Documents,Choose an option,click,,data-testid,"//*[@data-testid=""dropdown-button""]"
+32,Documents,National Identification Card,click,,data-testid,"//*[@data-testid=""option-1""]"
+33,Documents,Upload Front of ID,click,,data-testid,"//*[@data-testid=""file-upload-label""]"
+34,Documents,upload-front-input,click,,id,"//*[@id=""upload-front-input""]"
+35,Documents,upload-front-input,Input,C:\fakepath\DAVID_N_F.png,id,"//*[@id=""upload-front-input""]"
+36,Documents,Upload Back of ID,click,,data-testid,"//*[@data-testid=""file-upload-back-label""]"
+37,Documents,upload-back-input,click,,id,"//*[@id=""upload-back-input""]"
+38,Documents,upload-back-input,Input,C:\fakepath\DAVID_N_B.png,id,"//*[@id=""upload-back-input""]"
+39,Documents,Continue,click,,data-testid,"//*[@data-testid=""continue-button""]"
+40,Documents,Choose an option,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/button[1]
+41,Documents,FLOW BILL,click,,data-testid,"//*[@data-testid=""option-0""]"
+42,Documents,Select File,click,,data-testid,"//*[@data-testid=""file-upload-label""]"
+43,Documents,upload-front-input,click,,id,"//*[@id=""upload-front-input""]"
+44,Documents,upload-front-input,Input,C:\fakepath\FlowBill.jpg,id,"//*[@id=""upload-front-input""]"
+45,Documents,mailingCity,click,,id,"//*[@id=""mailingCity""]"
+46,Documents,mailingCity,Input,TRINCITY,id,"//*[@id=""mailingCity""]"
+47,Documents,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/div[1]/div[1]
+48,Documents,permanentAddressSameAsMailing,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/input[1]
+49,Documents,permanentAddressSameAsMailing,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/input[1]
+50,Documents,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[2]/div[1]/div[1]
+51,Documents,permanentAddressSameAsMailing,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[2]/input[1]
+52,Documents,permanentAddressSameAsMailing,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[2]/input[1]
+53,Documents,permanentAddressLine1,click,,id,"//*[@id=""permanentAddressLine1""]"
+54,Documents,permanentAddressLine1,Input,7 NORTHAM ROAD,id,"//*[@id=""permanentAddressLine1""]"
+55,Documents,permanentAddressLine2,click,,id,"//*[@id=""permanentAddressLine2""]"
+56,Documents,permanentAddressLine2,Input,BERKLEY ST,id,"//*[@id=""permanentAddressLine2""]"
+57,Documents,permanentCity,click,,id,"//*[@id=""permanentCity""]"
+58,Documents,permanentCity,Input,TRINCITY,id,"//*[@id=""permanentCity""]"
+59,Documents,Choose Country,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose Country"")]"
+60,Documents,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+61,Documents,permanentZipCode,click,,id,"//*[@id=""permanentZipCode""]"
+62,Documents,permanentZipCode,Input,57121888,id,"//*[@id=""permanentZipCode""]"
+63,Documents,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[4]/div[2]/div[1]/label[1]/div[1]
+64,Documents,utilityDocOption,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[4]/div[2]/div[1]/label[1]/input[1]
+65,Documents,utilityDocOption,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[4]/div[2]/div[1]/label[1]/input[1]
+66,Documents,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[4]/div[2]/div[1]/label[2]/div[1]/div[1]
+67,Documents,utilityDocOption,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[4]/div[2]/div[1]/label[2]/input[1]
+68,Documents,utilityDocOption,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[4]/div[2]/div[1]/label[2]/input[1]
+69,Documents,Select File,click,,class,"//label[contains(@class, ""gap-2"")]"
+70,Documents,upload-authorization,click,,id,"//*[@id=""upload-authorization""]"
+71,Documents,upload-authorization,Input,C:\fakepath\FlowBill.jpg,id,"//*[@id=""upload-authorization""]"
+72,Documents,Choose an option,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]"
+73,Documents,Passport,click,,data-testid,"//*[@data-testid=""option-0""]"
+74,Documents,Select File,click,,class,"//label[contains(@class, ""sm:text-xs"")]"
+75,Documents,upload-person-id,click,,id,"//*[@id=""upload-person-id""]"
+76,Documents,upload-person-id,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""upload-person-id""]"
+77,Documents,Save and Continue,click,,data-testid,"//*[@data-testid=""save-and-continue-button""]"
+78,Additional Details,Select Employment Status,click,,data-testid+text,"//*[@data-testid=""dropdown-text"" and contains(., ""Select Employment Status"")]"
+79,Additional Details,FULL TIME PERMANENT,click,,data-testid,"//*[@data-testid=""option-0""]"
+80,Additional Details,FULL TIME PERMANENT,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""FULL TIME PERMANENT"")]"
+81,Additional Details,FULL TIME TEMPORARY,click,,data-testid,"//*[@data-testid=""option-1""]"
+82,Additional Details,FULL TIME TEMPORARY,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""FULL TIME TEMPORARY"")]"
+83,Additional Details,OTHER,click,,data-testid,"//*[@data-testid=""option-2""]"
+84,Additional Details,OTHER,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""OTHER"")]"
+85,Additional Details,PART TIME,click,,data-testid,"//*[@data-testid=""option-3""]"
+86,Additional Details,PART TIME,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""PART TIME"")]"
+87,Additional Details,RETIRED NON PENSIONED,click,,data-testid,"//*[@data-testid=""option-4""]"
+88,Additional Details,RETIRED NON PENSIONED,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""RETIRED NON PENSIONED"")]"
+89,Additional Details,RETIRED PENSIONED,click,,data-testid,"//*[@data-testid=""option-5""]"
+90,Additional Details,RETIRED PENSIONED,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""RETIRED PENSIONED"")]"
+91,Additional Details,SELF EMPLOYED,click,,data-testid,"//*[@data-testid=""option-6""]"
+92,Additional Details,SELF EMPLOYED,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""SELF EMPLOYED"")]"
+93,Additional Details,UNEMPLOYED,click,,data-testid,"//*[@data-testid=""option-7""]"
+94,Additional Details,UNEMPLOYED,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""UNEMPLOYED"")]"
+95,Additional Details,FULL TIME PERMANENT,click,,data-testid,"//*[@data-testid=""option-0""]"
+96,Additional Details,Select Employer,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select Employer"")]"
+97,Additional Details,ABT ENGINEERS & CONSTRUCTORS L,click,,data-testid,"//*[@data-testid=""option-0""]"
+98,Additional Details,ABTENGG,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""ABTENGG"")]"
+99,Additional Details,ACE CONTRACTORS LIMITED,click,,data-testid,"//*[@data-testid=""option-1""]"
+100,Additional Details,ACECONT,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""ACECONT"")]"
+101,Additional Details,ACELORMITTAL,click,,data-testid,"//*[@data-testid=""option-2""]"
+102,Additional Details,ACELOR,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""ACELOR"")]"
+103,Additional Details,AGOSTINI'S LIMITED,click,,data-testid,"//*[@data-testid=""option-3""]"
+104,Additional Details,AGOSTINI,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""AGOSTINI"")]"
+105,Additional Details,:r15:-year,click,,id,"//*[@id="":r15:-year""]"
+106,Additional Details,occupation,click,,id,"//*[@id=""occupation""]"
+107,Additional Details,occupation,Input,ENGINEER,id,"//*[@id=""occupation""]"
+108,Additional Details,Choose sector,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose sector"")]"
+109,Additional Details,OTHERS,click,,data-testid,"//*[@data-testid=""option-0""]"
+110,Additional Details,OTHERS,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""OTHERS"")]"
+111,Additional Details,PUBLIC SECTOR,click,,data-testid,"//*[@data-testid=""option-2""]"
+112,Additional Details,PUBLIC SECTOR,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""PUBLIC SECTOR"")]"
+113,Additional Details,SELF EMPLOYED,click,,data-testid,"//*[@data-testid=""option-3""]"
+114,Additional Details,SELF EMPLOYED,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""SELF EMPLOYED"")]"
+115,Additional Details,PRIVATE SECTOR,click,,data-testid,"//*[@data-testid=""option-1""]"
+116,Additional Details,Choose Employment Type,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose Employment Type"")]"
+117,Additional Details,Financial,click,,data-testid,"//*[@data-testid=""option-1""]"
+118,Additional Details,Financial,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Financial"")]"
+119,Additional Details,Production/Manufacturing,click,,data-testid,"//*[@data-testid=""option-2""]"
+120,Additional Details,Production/Manufacturing,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Production/Manufacturing"")]"
+121,Additional Details,Professional/Technical,click,,data-testid,"//*[@data-testid=""option-3""]"
+122,Additional Details,Professional/Technical,click,,data-testid+text,"//*[@data-testid=""dropdown-text"" and contains(., ""Professional/Technical"")]"
+123,Additional Details,Service,click,,data-testid,"//*[@data-testid=""option-4""]"
+124,Additional Details,Service,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Service"")]"
+125,Additional Details,Agricultural,click,,data-testid,"//*[@data-testid=""option-0""]"
+126,Additional Details,employerAddressLine1,click,,id,"//*[@id=""employerAddressLine1""]"
+127,Additional Details,employerAddressLine1,Input,1 CRANBURRY AVENUE,id,"//*[@id=""employerAddressLine1""]"
+128,Additional Details,employerAddressLine2,click,,id,"//*[@id=""employerAddressLine2""]"
+129,Additional Details,employerCity,click,,id,"//*[@id=""employerCity""]"
+130,Additional Details,employerCity,Input,TRINCITY,id,"//*[@id=""employerCity""]"
+131,Additional Details,Choose Country,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose Country"")]"
+132,Additional Details,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+133,Additional Details,workPhoneNo,click,,id,"//*[@id=""workPhoneNo""]"
+134,Additional Details,workPhoneNo,Input,465-2138,id,"//*[@id=""workPhoneNo""]"
+135,Additional Details,workEmail,click,,id,"//*[@id=""workEmail""]"
+136,Additional Details,Purpose Of Business Relationsh,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Purpose Of Business Relationsh"")]"
+137,Additional Details,Shares,click,,data-testid,"//*[@data-testid=""option-0""]"
+138,Additional Details,Shares,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Shares"")]"
+139,Additional Details,Fixed Deposit,click,,data-testid,"//*[@data-testid=""option-1""]"
+140,Additional Details,Fixed Deposit,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Fixed Deposit"")]"
+141,Additional Details,Loan,click,,data-testid,"//*[@data-testid=""option-2""]"
+142,Additional Details,Loan,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Loan"")]"
+143,Additional Details,LinCU,click,,data-testid,"//*[@data-testid=""option-3""]"
+144,Additional Details,Choose an option,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]"
+145,Additional Details,"UNDER $5,000",click,,data-testid,"//*[@data-testid=""option-5""]"
+146,Additional Details,"UNDER $5,000",click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""UNDER $5,000"")]"
+147,Additional Details,"OVER $27,000",click,,data-testid,"//*[@data-testid=""option-4""]"
+148,Additional Details,"OVER $27,000",click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""OVER $27,000"")]"
+149,Additional Details,"$5,001-$12,000",click,,data-testid,"//*[@data-testid=""option-3""]"
+150,Additional Details,"$5,001-$12,000",click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""$5,001-$12,000"")]"
+151,Additional Details,"$22,001-$27,000",click,,data-testid,"//*[@data-testid=""option-2""]"
+152,Additional Details,"$22,001-$27,000",click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""$22,001-$27,000"")]"
+153,Additional Details,"$17,001-$22,000",click,,data-testid,"//*[@data-testid=""option-1""]"
+154,Additional Details,"$17,001-$22,000",click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""$17,001-$22,000"")]"
+155,Additional Details,"$12,001-$17,000",click,,data-testid,"//*[@data-testid=""option-0""]"
+156,Additional Details,Salary Frequency,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Salary Frequency"")]"
+157,Additional Details,ANNUALLY,click,,data-testid,"//*[@data-testid=""option-0""]"
+158,Additional Details,ANNUALLY,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""ANNUALLY"")]"
+159,Additional Details,BIWEEKLY,click,,data-testid,"//*[@data-testid=""option-1""]"
+160,Additional Details,BIWEEKLY,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""BIWEEKLY"")]"
+161,Additional Details,DAILY,click,,data-testid,"//*[@data-testid=""option-2""]"
+162,Additional Details,DAILY,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""DAILY"")]"
+163,Additional Details,FORTNIGHTLY,click,,data-testid,"//*[@data-testid=""option-3""]"
+164,Additional Details,FORTNIGHTLY,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""FORTNIGHTLY"")]"
+165,Additional Details,HOURLY,click,,data-testid,"//*[@data-testid=""option-4""]"
+166,Additional Details,HOURLY,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""HOURLY"")]"
+167,Additional Details,QUARTERLY,click,,data-testid,"//*[@data-testid=""option-6""]"
+168,Additional Details,QUARTERLY,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""QUARTERLY"")]"
+169,Additional Details,HOURLY,click,,data-testid,"//*[@data-testid=""option-4""]"
+170,Additional Details,HOURLY,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""HOURLY"")]"
+171,Additional Details,MONTHLY,click,,data-testid,"//*[@data-testid=""option-5""]"
+172,Additional Details,salary,click,,name,"//input[@name=""salary""]"
+173,Additional Details,salary,Input,"$ 13,000.00",name,"//input[@name=""salary""]"
+174,Additional Details,Account Funded,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Account Funded"")]"
+175,Additional Details,Others,click,,data-testid,"//*[@data-testid=""option-1""]"
+176,Additional Details,Others,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Others"")]"
+177,Additional Details,Via Salary,click,,data-testid,"//*[@data-testid=""option-0""]"
+178,Additional Details,Nationality,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Nationality"")]"
+179,Additional Details,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+180,Additional Details,Country of birth,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Country of birth"")]"
+181,Additional Details,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+182,Additional Details,placeOfBirth,click,,id,"//*[@id=""placeOfBirth""]"
+183,Additional Details,placeOfBirth,Input,TRINCITY,id,"//*[@id=""placeOfBirth""]"
+184,Additional Details,birthCertificatePinNo,click,,id,"//*[@id=""birthCertificatePinNo""]"
+185,Additional Details,Country of Issuance,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Country of Issuance"")]"
+186,Additional Details,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+187,Additional Details,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/div[1]
+188,Additional Details,nationalOfTTSecondary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1]
+189,Additional Details,nationalOfTTSecondary,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1]
+190,Additional Details,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[2]/div[1]/div[1]
+191,Additional Details,nationalOfTTSecondary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[2]/input[1]
+192,Additional Details,nationalOfTTSecondary,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[2]/input[1]
+193,Additional Details,Country Of Residence,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Country Of Residence"")]"
+194,Additional Details,Country Of Residence,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Country Of Residence"")]"
+195,Additional Details,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/div[1]
+196,Additional Details,nationalOfTTSecondary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1]
+197,Additional Details,nationalOfTTSecondary,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1]
+198,Additional Details,Marital Status,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Marital Status"")]"
+199,Additional Details,COMMON LAW,click,,data-testid,"//*[@data-testid=""option-0""]"
+200,Additional Details,COMMON LAW,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""COMMON LAW"")]"
+201,Additional Details,DIVORCED,click,,data-testid,"//*[@data-testid=""option-1""]"
+202,Additional Details,DIVORCED,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""DIVORCED"")]"
+203,Additional Details,MARRIED,click,,data-testid,"//*[@data-testid=""option-2""]"
+204,Additional Details,MARRIED,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""MARRIED"")]"
+205,Additional Details,REMARRIED,click,,data-testid,"//*[@data-testid=""option-3""]"
+206,Additional Details,REMARRIED,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""REMARRIED"")]"
+207,Additional Details,SEPARATED,click,,data-testid,"//*[@data-testid=""option-4""]"
+208,Additional Details,SEPARATED,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""SEPARATED"")]"
+209,Additional Details,WIDOWED,click,,data-testid,"//*[@data-testid=""option-6""]"
+210,Additional Details,WIDOWED,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[2]
+211,Additional Details,WIDOWED,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""WIDOWED"")]"
+212,Additional Details,SINGLE,click,,data-testid,"//*[@data-testid=""option-5""]"
+213,Additional Details,Highest Level of Education,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Highest Level of Education"")]"
+214,Additional Details,UNDERGRADUATE DEGREE,click,,data-testid,"//*[@data-testid=""option-4""]"
+215,Additional Details,UNDERGRADUATE DEGREE,click,,data-testid+text,"//*[@data-testid=""dropdown-text"" and contains(., ""UNDERGRADUATE DEGREE"")]"
+216,Additional Details,OTHER,click,,data-testid,"//*[@data-testid=""option-0""]"
+217,Additional Details,OTHER,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""OTHER"")]"
+218,Additional Details,PRIMARY SCHOOL,click,,data-testid,"//*[@data-testid=""option-2""]"
+219,Additional Details,PRIMARY SCHOOL,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""PRIMARY SCHOOL"")]"
+220,Additional Details,POSTGRADUATE DEGREE,click,,data-testid,"//*[@data-testid=""option-1""]"
+221,Additional Details,POSTGRADUATE DEGREE,click,,data-testid+text,"//*[@data-testid=""dropdown-text"" and contains(., ""POSTGRADUATE DEGREE"")]"
+222,Additional Details,SECONDARY SCHOOL,click,,data-testid,"//*[@data-testid=""option-3""]"
+223,Additional Details,Communication Method,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Communication Method"")]"
+224,Additional Details,Text Message,click,,data-testid,"//*[@data-testid=""option-3""]"
+225,Additional Details,Text Message,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Text Message"")]"
+226,Additional Details,Phone Call,click,,data-testid,"//*[@data-testid=""option-2""]"
+227,Additional Details,Phone Call,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Phone Call"")]"
+228,Additional Details,Mail,click,,data-testid,"//*[@data-testid=""option-1""]"
+229,Additional Details,Mail,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[2]
+230,Additional Details,Mail,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Mail"")]"
+231,Additional Details,Email,click,,data-testid,"//*[@data-testid=""option-0""]"
+232,Additional Details,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[1]/div[1]/div[1]
+233,Additional Details,memberOfOtherCreditUnion,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[1]/input[1]
+234,Additional Details,memberOfOtherCreditUnion,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[1]/input[1]
+235,Additional Details,stateNameOfCreditUnion,click,,id,"//*[@id=""stateNameOfCreditUnion""]"
+236,Additional Details,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[2]/div[1]/div[1]
+237,Additional Details,memberOfOtherCreditUnion,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[2]/input[1]
+238,Additional Details,memberOfOtherCreditUnion,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[2]/input[1]
+239,Additional Details,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+240,Additional Details,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+241,Additional Details,nationalOfTTPrimary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+242,Additional Details,nationalOfTTPrimary,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+243,Additional Details,Country of birth,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Country of birth"")]"
+244,Additional Details,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+245,Additional Details,placeOfBirth,click,,id,"//*[@id=""placeOfBirth""]"
+246,Additional Details,placeOfBirth,Input,TRINCITY,id,"//*[@id=""placeOfBirth""]"
+247,Additional Details,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+248,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+249,Other Products,hasBeneficiary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+250,Other Products,hasBeneficiary,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+251,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[2]/div[1]/div[1]
+252,Other Products,isBeneficiaryTecuMember,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[2]/input[1]
+253,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[1]/div[1]/div[1]
+254,Other Products,isBeneficiaryTecuMember,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[1]/input[1]
+255,Other Products,isBeneficiaryTecuMember,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[1]/input[1]
+256,Other Products,svg,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/svg[1]
+257,Other Products,customerId,click,,placeholder,"//input[@placeholder=""Enter number""]"
+258,Other Products,customerId,Input,121668,placeholder,"//input[@placeholder=""Enter number""]"
+259,Other Products,YYYY-,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[16]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]
+260,Other Products,Search,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Search"")]"
+261,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[1]/div[1]
+262,Other Products,documentType,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[1]/input[1]
+263,Other Products,documentType,Input,BENEFICIARY-DRIVERS-PERMIT,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[1]/input[1]
+264,Other Products,National ID,click,,text,"//label[contains(., ""National ID"")]"
+265,Other Products,documentType,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[2]/input[1]
+266,Other Products,documentType,Input,BENEFICIARY-NATIONAL-IDENTIFICATION-CARD,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[2]/input[1]
+267,Other Products,Passport,click,,text,"//label[contains(., ""Passport"")]"
+268,Other Products,documentType,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[3]/input[1]
+269,Other Products,documentType,Input,BENEFICIARY-PASSPORT,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[3]/input[1]
+270,Other Products,Birth Certificate,click,,text,"//span[contains(., ""Birth Certificate"")]"
+271,Other Products,documentType,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[4]/input[1]
+272,Other Products,documentType,Input,BENEFICIARY-BIRTH-CERTIFICATE,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[4]/input[1]
+273,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[5]/div[1]/div[1]
+274,Other Products,documentType,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[5]/input[1]
+275,Other Products,documentType,Input,BENEFICIARY-OTHER-DOCUMENTS,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[5]/input[1]
+276,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[4]/div[1]/div[1]
+277,Other Products,documentType,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[4]/input[1]
+278,Other Products,documentType,Input,BENEFICIARY-BIRTH-CERTIFICATE,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/label[4]/input[1]
+279,Other Products,birthCertificatePinNo,click,,id,"//*[@id=""birthCertificatePinNo""]"
+280,Other Products,Select country,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select country"")]"
+281,Other Products,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+282,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[2]/div[1]
+283,Other Products,hasBeneficiary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[2]/input[1]
+284,Other Products,hasBeneficiary,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[2]/input[1]
+285,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+286,Other Products,hasJointPartner,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/input[1]
+287,Other Products,hasJointPartner,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/input[1]
+288,Other Products,svg,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/svg[1]
+289,Other Products,customerId,click,,id,"//*[@id=""customerId""]"
+290,Other Products,customerId,Input,121669,id,"//*[@id=""customerId""]"
+291,Other Products,:r1p:-year,click,,id,"//*[@id="":r1p:-year""]"
+292,Other Products,Search,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Search"")]"
+293,Other Products,img,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/img[1]
+294,Other Products,Select relation,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select relation"")]"
+295,Other Products,Brother,click,,data-testid,"//*[@data-testid=""option-0""]"
+296,Other Products,No,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/label[2]
+297,Other Products,hasJointPartner,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/label[2]/input[1]
+298,Other Products,hasJointPartner,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/label[2]/input[1]
+299,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/label[1]/div[1]/div[1]
+300,Other Products,isApplyingForLincuCardApplication,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/label[1]/input[1]
+301,Other Products,isApplyingForLincuCardApplication,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/label[1]/input[1]
+302,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/label[2]/div[1]/div[1]
+303,Other Products,isApplyingForLincuCardApplication,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/label[2]/input[1]
+304,Other Products,isApplyingForLincuCardApplication,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/label[2]/input[1]
+305,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+306,Other Products,isApplyingForFipApplication,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/label[1]/input[1]
+307,Other Products,isApplyingForFipApplication,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/label[1]/input[1]
+308,Other Products,Choose an option,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]"
+309,Other Products,Plan A,click,,data-testid,"//*[@data-testid=""option-0""]"
+310,Other Products,Plan A,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Plan A"")]"
+311,Other Products,Plan B,click,,data-testid,"//*[@data-testid=""option-1""]"
+312,Other Products,Plan B,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Plan B"")]"
+313,Other Products,Plan C,click,,data-testid,"//*[@data-testid=""option-2""]"
+314,Other Products,Plan C,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Plan C"")]"
+315,Other Products,Plan D,click,,data-testid,"//*[@data-testid=""option-3""]"
+316,Other Products,Plan Type *Plan D,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[2]/div[1]
+317,Other Products,Plan D,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Plan D"")]"
+318,Other Products,Plan E,click,,data-testid,"//*[@data-testid=""option-4""]"
+319,Other Products,Plan E,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Plan E"")]"
+320,Other Products,Plan F,click,,data-testid,"//*[@data-testid=""option-5""]"
+321,Other Products,Plan F,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Plan F"")]"
+322,Other Products,Plan G,click,,data-testid,"//*[@data-testid=""option-6""]"
+323,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[3]/div[1]/div[1]/label[1]/div[1]/div[1]
+324,Other Products,hadFamilyIndemnityPlanCertificate,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[3]/div[1]/div[1]/label[1]/input[1]
+325,Other Products,hadFamilyIndemnityPlanCertificate,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[3]/div[1]/div[1]/label[1]/input[1]
+326,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[3]/div[1]/div[1]/label[2]/div[1]/div[1]
+327,Other Products,hadFamilyIndemnityPlanCertificate,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[3]/div[1]/div[1]/label[2]/input[1]
+328,Other Products,hadFamilyIndemnityPlanCertificate,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[3]/div[1]/div[1]/label[2]/input[1]
+329,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[4]/div[1]/div[1]/label[1]/div[1]/div[1]
+330,Other Products,presentlyCoveredUnderAnotherFip,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[4]/div[1]/div[1]/label[1]/input[1]
+331,Other Products,presentlyCoveredUnderAnotherFip,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[4]/div[1]/div[1]/label[1]/input[1]
+332,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[4]/div[1]/div[1]/label[2]/div[1]/div[1]
+333,Other Products,presentlyCoveredUnderAnotherFip,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[4]/div[1]/div[1]/label[2]/input[1]
+334,Other Products,presentlyCoveredUnderAnotherFip,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[4]/div[1]/div[1]/label[2]/input[1]
+335,Other Products,deductionTypeDesc,click,,name,"//input[@name=""deductionTypeDesc""]"
+336,Other Products,deductionTypeDesc,Input,True,name,"//input[@name=""deductionTypeDesc""]"
+337,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[6]/div[1]/div[1]/label[1]/div[1]/div[1]
+338,Other Products,criticalIllnessRider,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[6]/div[1]/div[1]/label[1]/input[1]
+339,Other Products,criticalIllnessRider,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[6]/div[1]/div[1]/label[1]/input[1]
+340,Other Products,Choose an option,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[7]/div[2]/div[1]/button[1]
+341,Other Products,"$150,000.00",click,,data-testid,"//*[@data-testid=""option-2""]"
+342,Other Products,Choose an option,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]"
+343,Other Products,"$150,000.00",click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""$150,000.00"")]"
+344,Other Products,"$50,000.00",click,,data-testid,"//*[@data-testid=""option-0""]"
+345,Other Products,"$50,000.00",click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""$50,000.00"")]"
+346,Other Products,"$100,000.00",click,,data-testid,"//*[@data-testid=""option-1""]"
+347,Other Products,"$100,000.00",click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""$100,000.00"")]"
+348,Other Products,"$150,000.00",click,,data-testid,"//*[@data-testid=""option-2""]"
+349,Other Products,"$150,000.00",click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""$150,000.00"")]"
+350,Other Products,"$300,000.00",click,,data-testid,"//*[@data-testid=""option-3""]"
+351,Other Products,"$300,000.00",click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""$300,000.00"")]"
+352,Other Products,"$300,000.00",click,,data-testid,"//*[@data-testid=""option-3""]"
+353,Other Products,"$300,000.00",click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""$300,000.00"")]"
+354,Other Products,"$450,000.00",click,,data-testid,"//*[@data-testid=""option-4""]"
+355,Other Products,"$450,000.00",click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""$450,000.00"")]"
+356,Other Products,"$600,000.00",click,,data-testid,"//*[@data-testid=""option-5""]"
+357,Other Products,Choose an option,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]"
+358,Other Products,Stroke,click,,data-testid,"//*[@data-testid=""option-4""]"
+359,Other Products,Stroke,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Stroke"")]"
+360,Other Products,Paralysis,click,,data-testid,"//*[@data-testid=""option-3""]"
+361,Other Products,Paralysis,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Paralysis"")]"
+362,Other Products,Major Burns,click,,data-testid,"//*[@data-testid=""option-2""]"
+363,Other Products,Major Burns,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Major Burns"")]"
+364,Other Products,Heart Attack,click,,data-testid,"//*[@data-testid=""option-1""]"
+365,Other Products,Heart Attack,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Heart Attack"")]"
+366,Other Products,Cancer,click,,data-testid,"//*[@data-testid=""option-0""]"
+367,Other Products,remarks,click,,id,"//*[@id=""remarks""]"
+368,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[6]/div[1]/div[1]/label[2]/div[1]
+369,Other Products,criticalIllnessRider,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[6]/div[1]/div[1]/label[2]/input[1]
+370,Other Products,criticalIllnessRider,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[6]/div[1]/div[1]/label[2]/input[1]
+371,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[7]/div[1]/div[1]/label[1]/div[1]/div[1]
+372,Other Products,diagnosedWithConditions,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[7]/div[1]/div[1]/label[1]/input[1]
+373,Other Products,diagnosedWithConditions,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[7]/div[1]/div[1]/label[1]/input[1]
+374,Other Products,diagnosedConditionsDetails,click,,id,"//*[@id=""diagnosedConditionsDetails""]"
+375,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[7]/div[1]/div[1]/label[2]/div[1]/div[1]
+376,Other Products,diagnosedWithConditions,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[7]/div[1]/div[1]/label[2]/input[1]
+377,Other Products,diagnosedWithConditions,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[7]/div[1]/div[1]/label[2]/input[1]
+378,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[8]/div[1]/div[1]/label[1]/div[1]/div[1]
+379,Other Products,receivedMedicalAttentionLast5Years,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[8]/div[1]/div[1]/label[1]/input[1]
+380,Other Products,receivedMedicalAttentionLast5Years,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[8]/div[1]/div[1]/label[1]/input[1]
+381,Other Products,medicalAttentionDetails,click,,id,"//*[@id=""medicalAttentionDetails""]"
+382,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[8]/div[1]/div[1]/label[2]/div[1]/div[1]
+383,Other Products,receivedMedicalAttentionLast5Years,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[8]/div[1]/div[1]/label[2]/input[1]
+384,Other Products,receivedMedicalAttentionLast5Years,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[8]/div[1]/div[1]/label[2]/input[1]
+385,Other Products,Select,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[10]/div[1]/div[1]/button[1]
+386,Other Products,1,click,,data-testid,"//*[@data-testid=""option-0""]"
+387,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[9]/div[1]/div[1]/label[2]/div[1]/div[1]
+388,Other Products,wouldLikeToAddInsureds,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[9]/div[1]/div[1]/label[2]/input[1]
+389,Other Products,wouldLikeToAddInsureds,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[9]/div[1]/div[1]/label[2]/input[1]
+390,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[9]/div[1]/div[1]/label[1]/div[1]
+391,Other Products,wouldLikeToAddInsureds,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[9]/div[1]/div[1]/label[1]/input[1]
+392,Other Products,wouldLikeToAddInsureds,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[9]/div[1]/div[1]/label[1]/input[1]
+393,Other Products,Select,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[10]/div[1]/div[1]/button[1]
+394,Other Products,2,click,,data-testid,"//*[@data-testid=""option-1""]"
+395,Other Products,Choose an option,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[1]/div[2]/div[1]/button[1]
+396,Other Products,Drivers Permit,click,,data-testid,"//*[@data-testid=""option-0""]"
+397,Other Products,DRIVERS-PERMIT,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""DRIVERS-PERMIT"")]"
+398,Other Products,National ID,click,,data-testid,"//*[@data-testid=""option-1""]"
+399,Other Products,NATIONAL-IDENTIFICATION-CARD,click,,data-testid+text,"//*[@data-testid=""dropdown-text"" and contains(., ""NATIONAL-IDENTIFICATION-CARD"")]"
+400,Other Products,Passport,click,,data-testid,"//*[@data-testid=""option-2""]"
+401,Other Products,PASSPORT,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""PASSPORT"")]"
+402,Other Products,Birth Certificate,click,,data-testid,"//*[@data-testid=""option-3""]"
+403,Other Products,BIRTH-CERTIFICATE,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""BIRTH-CERTIFICATE"")]"
+404,Other Products,Passport,click,,data-testid,"//*[@data-testid=""option-2""]"
+405,Other Products,Select Document,click,,class,"//label[contains(@class, ""hover:bg-[#cf6d18]"")]"
+406,Other Products,upload-input-0,click,,id,"//*[@id=""upload-input-0""]"
+407,Other Products,upload-input-0,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""upload-input-0""]"
+408,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+409,Other Products,familyMember-0-isTecuMember,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+410,Other Products,familyMember-0-isTecuMember,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+411,Other Products,Choose an option,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[1]/div[2]/div[1]/button[1]
+412,Other Products,Family Member to be Insured 1I,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[1]
+413,Other Products,svg,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[1]/div[4]/div[1]/div[1]/svg[1]
+414,Other Products,customerId,click,,id,"//*[@id=""customerId""]"
+415,Other Products,customerId,Input,121660,id,"//*[@id=""customerId""]"
+416,Other Products,:r2p:-year,click,,id,"//*[@id="":r2p:-year""]"
+417,Other Products,Search,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Search"")]"
+418,Other Products,Choose an option,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[1]/div[5]/div[9]/div[1]/button[1]
+419,Other Products,Parent / Parent-in-Law,click,,data-testid,"//*[@data-testid=""option-0""]"
+420,Other Products,Parent / Parent-in-Law,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Parent / Parent-in-Law"")]"
+421,Other Products,Spouse / Cohabitant,click,,data-testid,"//*[@data-testid=""option-1""]"
+422,Other Products,Spouse / Cohabitant,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Spouse / Cohabitant"")]"
+423,Other Products,Child,click,,data-testid,"//*[@data-testid=""option-2""]"
+424,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/label[2]/div[1]/div[1]
+425,Other Products,hasRecommender,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[1]/div[1]/div[1]/label[2]/input[1]
+426,Other Products,Select Relationship,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select Relationship"")]"
+427,Other Products,Brother,click,,data-testid,"//*[@data-testid=""option-0""]"
+428,Other Products,Brother,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Brother"")]"
+429,Other Products,Cousin,click,,data-testid,"//*[@data-testid=""option-1""]"
+430,Other Products,Cousin,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Cousin"")]"
+431,Other Products,Daughter,click,,data-testid,"//*[@data-testid=""option-2""]"
+432,Other Products,Daughter,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Daughter"")]"
+433,Other Products,Father,click,,data-testid,"//*[@data-testid=""option-3""]"
+434,Other Products,Father,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Father"")]"
+435,Other Products,Father,click,,data-testid,"//*[@data-testid=""option-3""]"
+436,Other Products,RelationshipFather,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[3]
+437,Other Products,Father,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Father"")]"
+438,Other Products,Father-in-law,click,,data-testid,"//*[@data-testid=""option-4""]"
+439,Other Products,Father-in-law,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Father-in-law"")]"
+440,Other Products,Mother,click,,data-testid,"//*[@data-testid=""option-5""]"
+441,Other Products,Mother,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Mother"")]"
+442,Other Products,Friend,click,,data-testid,"//*[@data-testid=""option-6""]"
+443,Other Products,Friend,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Friend"")]"
+444,Other Products,Father-in-law,click,,data-testid,"//*[@data-testid=""option-4""]"
+445,Other Products,Father-in-law,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Father-in-law"")]"
+446,Other Products,Other,click,,data-testid,"//*[@data-testid=""option-8""]"
+447,Other Products,Other,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Other"")]"
+448,Other Products,Sister,click,,data-testid,"//*[@data-testid=""option-9""]"
+449,Other Products,Sister,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Sister"")]"
+450,Other Products,Son,click,,data-testid,"//*[@data-testid=""option-10""]"
+451,Other Products,Son,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Son"")]"
+452,Other Products,Spouse,click,,data-testid,"//*[@data-testid=""option-11""]"
+453,Other Products,groupHealth,click,,name,"//input[@name=""groupHealth""]"
+454,Other Products,groupHealth,Input,True,name,"//input[@name=""groupHealth""]"
+455,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[3]/div[1]/div[1]/label[1]/div[1]/div[1]
+456,Other Products,isSpouseCoveredByOtherPlan,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[3]/div[1]/div[1]/label[1]/input[1]
+457,Other Products,isSpouseCoveredByOtherPlan,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[3]/div[1]/div[1]/label[1]/input[1]
+458,Other Products,planName,click,,id,"//*[@id=""planName""]"
+459,Other Products,planName,Input,ABCD,id,"//*[@id=""planName""]"
+460,Other Products,insuranceCompany,click,,id,"//*[@id=""insuranceCompany""]"
+461,Other Products,insuranceCompany,Input,DSCV,id,"//*[@id=""insuranceCompany""]"
+462,Other Products,Select Bank,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select Bank"")]"
+463,Other Products,FIRST CITIZENS BANK,click,,data-testid,"//*[@data-testid=""option-0""]"
+464,Other Products,FIRST CITIZENS BANK,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""FIRST CITIZENS BANK"")]"
+465,Other Products,SCOTIA BANK,click,,data-testid,"//*[@data-testid=""option-1""]"
+466,Other Products,SCOTIA BANK,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""SCOTIA BANK"")]"
+467,Other Products,ROYAL BANK,click,,data-testid,"//*[@data-testid=""option-2""]"
+468,Other Products,ROYAL BANK,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""ROYAL BANK"")]"
+469,Other Products,CITIBANK,click,,data-testid,"//*[@data-testid=""option-3""]"
+470,Other Products,CITIBANK,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""CITIBANK"")]"
+471,Other Products,BANK OF BARODA,click,,data-testid,"//*[@data-testid=""option-4""]"
+472,Other Products,BANK OF BARODA,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""BANK OF BARODA"")]"
+473,Other Products,CENTRAL BANK,click,,data-testid,"//*[@data-testid=""option-5""]"
+474,Other Products,CENTRAL BANK,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""CENTRAL BANK"")]"
+475,Other Products,CENTRAL BANK,click,,data-testid,"//*[@data-testid=""option-5""]"
+476,Other Products,CENTRAL BANK,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""CENTRAL BANK"")]"
+477,Other Products,JMMB,click,,data-testid,"//*[@data-testid=""option-6""]"
+478,Other Products,JMMB,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""JMMB"")]"
+479,Other Products,REPUBLIC BANK,click,,data-testid,"//*[@data-testid=""option-7""]"
+480,Other Products,branchName,click,,id,"//*[@id=""branchName""]"
+481,Other Products,branchName,Input,TRINCITY,id,"//*[@id=""branchName""]"
+482,Other Products,accountNo,click,,id,"//*[@id=""accountNo""]"
+483,Other Products,accountNo,Input,233244224445553,id,"//*[@id=""accountNo""]"
+484,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[5]/div[2]/div[1]/div[1]/label[1]/div[1]
+485,Other Products,accountType,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[5]/div[2]/div[1]/div[1]/label[1]/input[1]
+486,Other Products,accountType,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[5]/div[2]/div[1]/div[1]/label[1]/input[1]
+487,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[5]/div[2]/div[1]/div[1]/label[2]/div[1]/div[1]
+488,Other Products,accountType,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[5]/div[2]/div[1]/div[1]/label[2]/input[1]
+489,Other Products,accountType,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[5]/div[2]/div[1]/div[1]/label[2]/input[1]
+490,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]
+491,Other Products,addDependent,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+492,Other Products,addDependent,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+493,Other Products,1,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""1"")]"
+494,Other Products,1,click,,data-testid,"//*[@data-testid=""option-0""]"
+495,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/div[1]
+496,Other Products,dependent-0-isTecuMember,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/input[1]
+497,Other Products,dependent-0-isTecuMember,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]/input[1]
+498,Other Products,Choose an option,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[2]/div[2]/div[1]/button[1]
+499,Other Products,Passport,click,,data-testid,"//*[@data-testid=""option-0""]"
+500,Other Products,Select File,click,,class,"//label[contains(@class, ""border"")]"
+501,Other Products,dependent-0-upload,click,,id,"//*[@id=""dependent-0-upload""]"
+502,Other Products,dependent-0-upload,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""dependent-0-upload""]"
+503,Other Products,Reset,click,,class,"//div[contains(@class, ""sm:w-auto"")]"
+504,Other Products,svg,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[2]/div[4]/div[1]/div[1]/svg[1]
+505,Other Products,customerId,click,,id,"//*[@id=""customerId""]"
+506,Other Products,customerId,Input,121676,id,"//*[@id=""customerId""]"
+507,Other Products,:r39:-year,click,,id,"//*[@id="":r39:-year""]"
+508,Other Products,Search,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Search"")]"
+509,Other Products,Select relation,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select relation"")]"
+510,Other Products,Spouse,click,,data-testid,"//*[@data-testid=""option-0""]"
+511,Other Products,Spouse,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[6]/div[1]/div[2]/div[4]/div[3]/div[1]/button[1]
+512,Other Products,Child,click,,data-testid,"//*[@data-testid=""option-1""]"
+513,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+514,Other Products,beneficiary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+515,Other Products,beneficiary,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+516,Other Products,1,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/button[1]
+517,Other Products,1,click,,data-testid,"//*[@data-testid=""option-0""]"
+518,Other Products,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+519,Other Products,beneficiary-0-isTecuMember,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[1]/div[1]/div[1]/label[1]/input[1]
+520,Other Products,beneficiary-0-isTecuMember,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[1]/div[1]/div[1]/label[1]/input[1]
+521,Other Products,Choose an option,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[2]/div[1]/button[1]
+522,Other Products,Passport,click,,data-testid,"//*[@data-testid=""option-0""]"
+523,Other Products,Select File,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[3]/div[1]/div[1]/div[1]/label[1]
+524,Other Products,beneficiary-0-upload,click,,id,"//*[@id=""beneficiary-0-upload""]"
+525,Other Products,beneficiary-0-upload,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""beneficiary-0-upload""]"
+526,Other Products,Select relation,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select relation"")]"
+527,Other Products,svg,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[4]/div[1]/div[1]/svg[1]
+528,Other Products,customerId,click,,id,"//*[@id=""customerId""]"
+529,Other Products,customerId,Input,121670,id,"//*[@id=""customerId""]"
+530,Other Products,:r3p:-year,click,,id,"//*[@id="":r3p:-year""]"
+531,Other Products,Search,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Search"")]"
+532,Other Products,Select relation,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select relation"")]"
+533,Other Products,Other,click,,data-testid,"//*[@data-testid=""option-11""]"
+534,Other Products,Other,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Other"")]"
+535,Other Products,Friend,click,,data-testid,"//*[@data-testid=""option-10""]"
+536,Other Products,Friend,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Friend"")]"
+537,Other Products,Cousin,click,,data-testid,"//*[@data-testid=""option-9""]"
+538,Other Products,Cousin,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Cousin"")]"
+539,Other Products,Sister,click,,data-testid,"//*[@data-testid=""option-8""]"
+540,Other Products,Sister,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Sister"")]"
+541,Other Products,Brother,click,,data-testid,"//*[@data-testid=""option-7""]"
+542,Other Products,Brother,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Brother"")]"
+543,Other Products,Spouse,click,,data-testid,"//*[@data-testid=""option-6""]"
+544,Other Products,Spouse,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[4]/div[3]/div[1]/button[1]
+545,Other Products,Mother-In-Law,click,,data-testid,"//*[@data-testid=""option-5""]"
+546,Other Products,Mother-in-Law,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Mother-in-Law"")]"
+547,Other Products,Mother,click,,data-testid,"//*[@data-testid=""option-4""]"
+548,Other Products,Mother,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Mother"")]"
+549,Other Products,Father-In-Law,click,,data-testid,"//*[@data-testid=""option-3""]"
+550,Other Products,Father-in-Law,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Father-in-Law"")]"
+551,Other Products,Father,click,,data-testid,"//*[@data-testid=""option-2""]"
+552,Other Products,Father,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Father"")]"
+553,Other Products,Son,click,,data-testid,"//*[@data-testid=""option-1""]"
+554,Other Products,Son,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Son"")]"
+555,Other Products,Daughter,click,,data-testid,"//*[@data-testid=""option-0""]"
+556,Other Products,beneficiaryPercentage0,click,,id,"//*[@id=""beneficiaryPercentage0""]"
+557,Other Products,beneficiaryPercentage0,Input,100,id,"//*[@id=""beneficiaryPercentage0""]"
+558,Other Products,beneficiaryDocumentId0,click,,id,"//*[@id=""beneficiaryDocumentId0""]"
+559,Other Products,TRINIDAD AND TOBAGO,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[6]/div[1]/div[1]/button[1]/span[1]
+560,Other Products,TRINIDAD AND TOBAGO,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[6]/div[1]/div[1]/button[1]
+561,Other Products,2017-10-17,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[6]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]
+562,Other Products,2027-10-16,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[7]/div[2]/div[6]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]
+563,Other Products,isAllInformationCorrect,click,,name,"//input[@name=""isAllInformationCorrect""]"
+564,Other Products,isAllInformationCorrect,Input,True,name,"//input[@name=""isAllInformationCorrect""]"
+565,Other Products,isTermsAndConditionsAccepted,click,,name,"//input[@name=""isTermsAndConditionsAccepted""]"
+566,Other Products,Accept,click,,text,"//button[contains(., ""Accept"")]"
+567,Other Products,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+568,Other Products,svg,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/div[1]/svg[1]
+569,Other Products,customerId,click,,id,"//*[@id=""customerId""]"
+570,Other Products,customerId,Input,121671,id,"//*[@id=""customerId""]"
+571,Other Products,:r3t:-month,click,,id,"//*[@id="":r3t:-month""]"
+572,Other Products,:r3t:-year,click,,id,"//*[@id="":r3t:-year""]"
+573,Other Products,Search,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Search"")]"
+574,Other Products,Select Relationship,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select Relationship"")]"
+575,Other Products,Brother,click,,data-testid,"//*[@data-testid=""option-0""]"
+576,Other Products,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+577,Other Products,phoneNumber-1,click,,id,"//*[@id=""phoneNumber-1""]"
+578,Other Products,Choose an option,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[2]/div[2]/div[1]/button[1]
+579,Other Products,Passport,click,,data-testid,"//*[@data-testid=""option-2""]"
+580,Other Products,Select Document,click,,class,"//label[contains(@class, ""hover:bg-[#cf6d18]"")]"
+581,Other Products,upload-input-1,click,,id,"//*[@id=""upload-input-1""]"
+582,Other Products,upload-input-1,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""upload-input-1""]"
+583,Other Products,address-1,click,,id,"//*[@id=""address-1""]"
+584,Other Products,address-1,Input,7 BLEAK ST,id,"//*[@id=""address-1""]"
+585,Other Products,firstName-1,click,,id,"//*[@id=""firstName-1""]"
+586,Other Products,middleName-1,click,,id,"//*[@id=""middleName-1""]"
+587,Other Products,lastName-1,click,,id,"//*[@id=""lastName-1""]"
+588,Other Products,address-1,click,,id,"//*[@id=""address-1""]"
+589,Other Products,TRINIDAD AND TOBAGO,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[2]/div[5]/div[5]/div[1]/button[1]/span[1]
+590,Other Products,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+591,Other Products,Male,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[2]/div[5]/div[6]/div[1]/button[1]
+592,Other Products,Male,click,,data-testid,"//*[@data-testid=""option-0""]"
+593,Other Products,Male,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[2]/div[5]/div[6]/div[1]/button[1]
+594,Other Products,Female,click,,data-testid,"//*[@data-testid=""option-1""]"
+595,Other Products,phoneNumber-1,click,,id,"//*[@id=""phoneNumber-1""]"
+596,Other Products,phoneNumber-1,Input,154-1141,id,"//*[@id=""phoneNumber-1""]"
+597,Other Products,emailAddress-1,click,,id,"//*[@id=""emailAddress-1""]"
+598,Other Products,Choose an option,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[2]/div[5]/div[9]/div[1]/button[1]
+599,Other Products,Parent / Parent-in-Law,click,,data-testid,"//*[@data-testid=""option-0""]"
+600,Other Products,Parent / Parent-in-Law,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Parent / Parent-in-Law"")]"
+601,Other Products,Child,click,,data-testid,"//*[@data-testid=""option-2""]"
+602,Other Products,Child,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[2]/div[5]/div[9]/div[1]/button[1]
+603,Other Products,Spouse / Cohabitant,click,,data-testid,"//*[@data-testid=""option-1""]"
+604,Other Products,documentId-1,click,,id,"//*[@id=""documentId-1""]"
+605,Other Products,TRINIDAD AND TOBAGO,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[2]/div[7]/div[1]/div[1]/button[1]
+606,Other Products,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+607,Other Products,2017-10-17,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[2]/div[7]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]
+608,Other Products,2027-10-16,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[2]/div[7]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]
+609,Other Products,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+610,Other Products,Choose an option,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]"
+611,Other Products,Passport,click,,data-testid,"//*[@data-testid=""option-2""]"
+612,Other Products,Select Document,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[11]/div[1]/div[3]/div[3]/div[1]/label[1]
+613,Other Products,upload-input-0,click,,id,"//*[@id=""upload-input-0""]"
+614,Other Products,upload-input-0,Input,C:\fakepath\AVINASH_PASS.png,id,"//*[@id=""upload-input-0""]"
+615,Other Products,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+616,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1]
+617,PEP / FATCA,isHeadOfState,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+618,PEP / FATCA,isHeadOfState,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+619,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[2]/div[1]/div[1]
+620,PEP / FATCA,isHeadOfState,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[2]/input[1]
+621,PEP / FATCA,isHeadOfState,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/label[2]/input[1]
+622,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[1]/div[1]
+623,PEP / FATCA,isHeadOfGovt,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[1]/input[1]
+624,PEP / FATCA,isHeadOfGovt,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[1]/input[1]
+625,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[2]/div[1]/div[1]
+626,PEP / FATCA,isHeadOfGovt,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[2]/input[1]
+627,PEP / FATCA,isHeadOfGovt,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/label[2]/input[1]
+628,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/label[1]/div[1]
+629,PEP / FATCA,isSenPolitician,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/label[1]/input[1]
+630,PEP / FATCA,isSenPolitician,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/label[1]/input[1]
+631,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/label[2]/div[1]
+632,PEP / FATCA,isSenPolitician,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/label[2]/input[1]
+633,PEP / FATCA,isSenPolitician,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[2]/div[1]/label[2]/input[1]
+634,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/div[1]/div[1]
+635,PEP / FATCA,isSenGovtOfficial,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/input[1]
+636,PEP / FATCA,isSenGovtOfficial,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/input[1]
+637,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[2]/div[1]/div[1]
+638,PEP / FATCA,isSenGovtOfficial,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[2]/input[1]
+639,PEP / FATCA,isSenGovtOfficial,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[2]/input[1]
+640,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/label[1]/div[1]
+641,PEP / FATCA,isSenJudicialOfficial,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/label[1]/input[1]
+642,PEP / FATCA,isSenJudicialOfficial,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/label[1]/input[1]
+643,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/label[2]/div[1]/div[1]
+644,PEP / FATCA,isSenJudicialOfficial,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/label[2]/input[1]
+645,PEP / FATCA,isSenJudicialOfficial,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/div[1]/label[2]/input[1]
+646,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/label[1]/div[1]/div[1]
+647,PEP / FATCA,isSenMilitaryOfficial,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/label[1]/input[1]
+648,PEP / FATCA,isSenMilitaryOfficial,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/label[1]/input[1]
+649,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/label[2]/div[1]/div[1]
+650,PEP / FATCA,isSenMilitaryOfficial,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/label[2]/input[1]
+651,PEP / FATCA,isSenMilitaryOfficial,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[6]/div[2]/div[1]/label[2]/input[1]
+652,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/label[1]/div[1]/div[1]
+653,PEP / FATCA,isSenExecSOC,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/label[1]/input[1]
+654,PEP / FATCA,isSenExecSOC,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/label[1]/input[1]
+655,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/label[2]/div[1]/div[1]
+656,PEP / FATCA,isSenExecSOC,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/label[2]/input[1]
+657,PEP / FATCA,isSenExecSOC,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[7]/div[2]/div[1]/label[2]/input[1]
+658,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/label[1]/div[1]/div[1]
+659,PEP / FATCA,isImpPPO,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/label[1]/input[1]
+660,PEP / FATCA,isImpPPO,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/label[1]/input[1]
+661,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/label[2]/div[1]
+662,PEP / FATCA,isImpPPO,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/label[2]/input[1]
+663,PEP / FATCA,isImpPPO,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[8]/div[2]/div[1]/label[2]/input[1]
+664,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/label[1]/div[1]/div[1]
+665,PEP / FATCA,isImmediateFamily,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/label[1]/input[1]
+666,PEP / FATCA,isImmediateFamily,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/label[1]/input[1]
+667,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/label[2]/div[1]/div[1]
+668,PEP / FATCA,isImmediateFamily,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/label[2]/input[1]
+669,PEP / FATCA,isImmediateFamily,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[9]/div[2]/div[1]/label[2]/input[1]
+670,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/label[1]/div[1]/div[1]
+671,PEP / FATCA,isMemberOfSeniorManagement,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/label[1]/input[1]
+672,PEP / FATCA,isMemberOfSeniorManagement,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/label[1]/input[1]
+673,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/label[2]/div[1]/div[1]
+674,PEP / FATCA,isMemberOfSeniorManagement,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/label[2]/input[1]
+675,PEP / FATCA,isMemberOfSeniorManagement,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[10]/div[2]/div[1]/label[2]/input[1]
+676,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[11]/div[2]/div[1]/label[1]/div[1]/div[1]
+677,PEP / FATCA,isPepAssociate,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[11]/div[2]/div[1]/label[1]/input[1]
+678,PEP / FATCA,isPepAssociate,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[11]/div[2]/div[1]/label[1]/input[1]
+679,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[11]/div[2]/div[1]/label[2]/div[1]/div[1]
+680,PEP / FATCA,isPepAssociate,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[11]/div[2]/div[1]/label[2]/input[1]
+681,PEP / FATCA,isPepAssociate,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[11]/div[2]/div[1]/label[2]/input[1]
+682,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]
+683,PEP / FATCA,isCitizenOfOtherCountry,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+684,PEP / FATCA,isCitizenOfOtherCountry,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+685,PEP / FATCA,Select Country,click,,class,"//button[contains(@class, ""lg:w-full"")]"
+686,PEP / FATCA,Search...,click,,data-testid,"//*[@data-testid=""search-input""]"
+687,PEP / FATCA,UNITED STATES OF AMERICA,click,,data-testid,"//*[@data-testid=""option-0""]"
+688,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/label[2]/div[1]/div[1]
+689,PEP / FATCA,isCitizenOfOtherCountry,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/label[2]/input[1]
+690,PEP / FATCA,isCitizenOfOtherCountry,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/label[2]/input[1]
+691,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/label[1]/div[1]/div[1]
+692,PEP / FATCA,isGreenCardHolder,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/label[1]/input[1]
+693,PEP / FATCA,isGreenCardHolder,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/label[1]/input[1]
+694,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/label[2]/div[1]/div[1]
+695,PEP / FATCA,isGreenCardHolder,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/label[2]/input[1]
+696,PEP / FATCA,isGreenCardHolder,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]/label[2]/input[1]
+697,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/label[1]/div[1]/div[1]
+698,PEP / FATCA,isGranteePOA,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/label[1]/input[1]
+699,PEP / FATCA,isGranteePOA,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/label[1]/input[1]
+700,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/label[2]/div[1]/div[1]
+701,PEP / FATCA,isGranteePOA,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/label[2]/input[1]
+702,PEP / FATCA,isGranteePOA,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[4]/div[1]/div[1]/label[2]/input[1]
+703,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/label[1]/div[1]/div[1]
+704,PEP / FATCA,hasStandingInstructIncome,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/label[1]/input[1]
+705,PEP / FATCA,hasStandingInstructIncome,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/label[1]/input[1]
+706,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/label[2]/div[1]/div[1]
+707,PEP / FATCA,hasStandingInstructIncome,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/label[2]/input[1]
+708,PEP / FATCA,hasStandingInstructIncome,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[5]/div[1]/div[1]/label[2]/input[1]
+709,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[1]/label[1]/div[1]/div[1]
+710,PEP / FATCA,isDisclosureTaxResidency,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[1]/label[1]/input[1]
+711,PEP / FATCA,isDisclosureTaxResidency,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[1]/label[1]/input[1]
+712,PEP / FATCA,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[1]/label[2]/div[1]/div[1]
+713,PEP / FATCA,isDisclosureTaxResidency,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[1]/label[2]/input[1]
+714,PEP / FATCA,isDisclosureTaxResidency,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[1]/label[2]/input[1]
+715,PEP / FATCA,Select Country,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[7]/div[2]/div[1]/button[1]
+716,PEP / FATCA,UNITED STATES OF AMERICA,click,,data-testid,"//*[@data-testid=""option-0""]"
+717,PEP / FATCA,ssnNo1,click,,id,"//*[@id=""ssnNo1""]"
+718,PEP / FATCA,ssnNo2,click,,id,"//*[@id=""ssnNo2""]"
+719,PEP / FATCA,ssnNo2,Input,124-58-5465,id,"//*[@id=""ssnNo2""]"
+720,PEP / FATCA,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+721,PDF / Other Documents,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/button[1]
+722,PDF / Other Documents,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/button[1]
+723,PDF / Other Documents,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[3]/button[1]
+724,PDF / Other Documents,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[4]/button[1]
+725,PDF / Other Documents,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[5]/button[1]
+726,PDF / Other Documents,View PDF,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[6]/button[1]
+727,PDF / Other Documents,Select File,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/label[1]
+728,PDF / Other Documents,1.-job-letter-(less-than-3-months-old),click,,id,"//*[@id=""1.-job-letter-(less-than-3-months-old)""]"
+729,PDF / Other Documents,1.-job-letter-(less-than-3-months-old),Input,C:\fakepath\FlowBill.jpg,id,"//*[@id=""1.-job-letter-(less-than-3-months-old)""]"
+730,PDF / Other Documents,Select File,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]
+731,PDF / Other Documents,2.-pay-slip-(less-than-1-month-old),click,,id,"//*[@id=""2.-pay-slip-(less-than-1-month-old)""]"
+732,PDF / Other Documents,2.-pay-slip-(less-than-1-month-old),Input,C:\fakepath\FlowBill.jpg,id,"//*[@id=""2.-pay-slip-(less-than-1-month-old)""]"
+733,PDF / Other Documents,Add New Field,click,,class,"//button[contains(@class, ""lg:ml-5"")]"
+734,PDF / Other Documents,Enter Document Name,click,,placeholder,"//input[@placeholder=""Enter Document Name""]"
+735,PDF / Other Documents,Select File,click,,class,"//label[contains(@class, ""h-10"")]"
+736,PDF / Other Documents,Submit,click,,data-testid,"//*[@data-testid=""button""]"
+737,PDF / Other Documents,otp-input-0,click,,id,"//*[@id=""otp-input-0""]"
+738,PDF / Other Documents,otp-input-0,Input,1,id,"//*[@id=""otp-input-0""]"
+739,PDF / Other Documents,otp-input-1,Input,2,id,"//*[@id=""otp-input-1""]"
+740,PDF / Other Documents,otp-input-2,Input,1,id,"//*[@id=""otp-input-2""]"
+741,PDF / Other Documents,otp-input-3,Input,2,id,"//*[@id=""otp-input-3""]"
+742,PDF / Other Documents,otp-input-4,Input,1,id,"//*[@id=""otp-input-4""]"
+743,PDF / Other Documents,otp-input-5,Input,2,id,"//*[@id=""otp-input-5""]"
+744,PDF / Other Documents,Verify OTP,click,,data-testid,"//*[@data-testid=""submit-button""]"
