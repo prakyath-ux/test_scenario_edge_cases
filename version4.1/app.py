@@ -297,10 +297,10 @@ if st.session_state.recording:
             recent_entries = entries[-max_entries:]
             df = pd.DataFrame(recent_entries)
 
-            # Reorder columns - Group first for visibility
-            display_cols = ["group", "label", "action", "values", "strategy", "xpath"]
+            # Reorder columns - Group first, Value last for visibility
+            display_cols = ["group", "label", "action", "strategy", "xpath", "values"]
             df = df[[c for c in display_cols if c in df.columns]]
-            df.columns = ["Group", "Element", "Action", "Value", "Strategy", "XPath"]
+            df.columns = ["Group", "Element", "Action", "Strategy", "XPath", "Value"]
 
             st.dataframe(df, use_container_width=True, height=400)
 
@@ -310,9 +310,9 @@ if st.session_state.recording:
 
             # Prepare CSV for download (in the format expected by Test Data generator)
             export_df = pd.DataFrame(entries)
-            export_cols = ["group", "label", "action", "values", "strategy", "xpath"]
+            export_cols = ["group", "label", "action", "strategy", "xpath", "values"]
             export_df = export_df[[c for c in export_cols if c in export_df.columns]]
-            export_df.columns = ["Group", "Element", "Action", "Value", "Strategy", "XPath"]
+            export_df.columns = ["Group", "Element", "Action", "Strategy", "XPath", "Value"]
 
             with download_col1:
                 csv_data = export_df.to_csv(index=False)
