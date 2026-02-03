@@ -1,0 +1,58 @@
+﻿,Group,Element,Action,Value,Strategy,XPath
+0,Additional Details,Select Employment Status,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select Employment Status"")]"
+1,Additional Details,FULL TIME PERMANENT,click,,data-testid,"//*[@data-testid=""option-0""]"
+2,Additional Details,Select Employer,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select Employer"")]"
+3,Additional Details,ABT ENGINEERS & CONSTRUCTORS L,click,,data-testid,"//*[@data-testid=""option-0""]"
+4,Additional Details,:r19:-year,click,,id,"//*[@id="":r19:-year""]"
+5,Additional Details,Date cannot be in the future. ,click,,absolute,/html/body/div[2]/div[1]/div[1]/div[1]/div[2]
+6,Additional Details,:r19:-year,click,,id,"//*[@id="":r19:-year""]"
+7,Additional Details,occupation,click,,id,"//*[@id=""occupation""]"
+8,Additional Details,occupation,Input,ENGINEER,id,"//*[@id=""occupation""]"
+9,Additional Details,Choose sector,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose sector"")]"
+10,Additional Details,PRIVATE SECTOR,click,,data-testid,"//*[@data-testid=""option-1""]"
+11,Additional Details,Choose Employment Type,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose Employment Type"")]"
+12,Additional Details,Agricultural,click,,data-testid,"//*[@data-testid=""option-0""]"
+13,Additional Details,employerAddressLine1,click,,id,"//*[@id=""employerAddressLine1""]"
+14,Additional Details,employerAddressLine1,Input,7 NORTHAM RD,id,"//*[@id=""employerAddressLine1""]"
+15,Additional Details,employerCity,click,,id,"//*[@id=""employerCity""]"
+16,Additional Details,employerCity,Input,TRINCITY,id,"//*[@id=""employerCity""]"
+17,Additional Details,Choose Country,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose Country"")]"
+18,Additional Details,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+19,Additional Details,workPhoneNo,click,,id,"//*[@id=""workPhoneNo""]"
+20,Additional Details,workPhoneNo,Input,514-5955,id,"//*[@id=""workPhoneNo""]"
+21,Additional Details,Choose an option,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]"
+22,Additional Details,"$12,001-$17,000",click,,data-testid,"//*[@data-testid=""option-0""]"
+23,Additional Details,Salary Frequency,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Salary Frequency"")]"
+24,Additional Details,ANNUALLY,click,,data-testid,"//*[@data-testid=""option-0""]"
+25,Additional Details,salary,click,,name,"//input[@name=""salary""]"
+26,Additional Details,salary,Input,"$ 13,000.00",name,"//input[@name=""salary""]"
+27,Additional Details,Account Funded,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Account Funded"")]"
+28,Additional Details,Via Salary,click,,data-testid,"//*[@data-testid=""option-0""]"
+29,Additional Details,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]
+30,Additional Details,nationalOfTTPrimary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+31,Additional Details,nationalOfTTPrimary,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1]
+32,Additional Details,Country of birth,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Country of birth"")]"
+33,Additional Details,TRINIDAD AND TOBAGO,click,,data-testid,"//*[@data-testid=""option-0""]"
+34,Additional Details,placeOfBirth,click,,id,"//*[@id=""placeOfBirth""]"
+35,Additional Details,placeOfBirth,Input,TRINCITY,id,"//*[@id=""placeOfBirth""]"
+36,Additional Details,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/div[1]/div[1]
+37,Additional Details,nationalOfTTSecondary,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1]
+38,Additional Details,nationalOfTTSecondary,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1]
+39,Additional Details,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+40,Additional Details,Please fill in the following r,click,,absolute,/html/body/div[2]/div[1]/div[1]/div[1]/div[2]
+41,Additional Details,Marital Status,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Marital Status"")]"
+42,Additional Details,COMMON LAW,click,,data-testid,"//*[@data-testid=""option-0""]"
+43,Additional Details,COMMON LAW,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""COMMON LAW"")]"
+44,Additional Details,SINGLE,click,,data-testid,"//*[@data-testid=""option-5""]"
+45,Additional Details,Highest Level of Education,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Highest Level of Education"")]"
+46,Additional Details,POSTGRADUATE DEGREE,click,,data-testid,"//*[@data-testid=""option-1""]"
+47,Additional Details,Communication Method,click,,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Communication Method"")]"
+48,Additional Details,Email,click,,data-testid,"//*[@data-testid=""option-0""]"
+49,Additional Details,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[1]/div[1]
+50,Additional Details,memberOfOtherCreditUnion,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[1]/input[1]
+51,Additional Details,memberOfOtherCreditUnion,Input,true,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[1]/input[1]
+52,Additional Details,div,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[2]/div[1]
+53,Additional Details,memberOfOtherCreditUnion,click,,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[2]/input[1]
+54,Additional Details,memberOfOtherCreditUnion,Input,false,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[2]/input[1]
+55,Additional Details,Save & Continue,click,,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]"
+56,Additional Details,Details has been saved succesf,click,,absolute,/html/body/div[2]/div[1]/div[1]/div[1]/div[2]
