@@ -1,0 +1,102 @@
+Group,Element,Action,Property,Strategy,XPath,Value
+test3,firstName,click,text,id,"//*[@id=""firstName""]",
+test3,firstName,Input,text,id,"//*[@id=""firstName""]",STEVE
+test3,email,click,email,id,"//*[@id=""email""]",
+test3,email,Input,email,id,"//*[@id=""email""]",STEVE@GMAIL.COM
+test3,middleName,click,text,id,"//*[@id=""middleName""]",
+test3,middleName,Input,text,id,"//*[@id=""middleName""]",P
+test3,mobileNumber,click,tel,id,"//*[@id=""mobileNumber""]",
+test3,mobileNumber,Input,tel,id,"//*[@id=""mobileNumber""]",789-5124
+test3,lastName,click,text,id,"//*[@id=""lastName""]",
+test3,lastName,Input,text,id,"//*[@id=""lastName""]",ROGERS
+test3,Select Branch,click,submit,data-testid,"//*[@data-testid=""dropdown-button""]",
+test3,300 - TECU - PT. FORTIN BRANCH,click,li,data-testid,"//*[@data-testid=""option-2""]",
+test3,Add profile picture,click,submit,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Add profile picture"")]",
+test3,Upload,click,label,data-testid,"//*[@data-testid=""upload-button""]",
+test3,file-upload,click,file,id,"//*[@id=""file-upload""]",
+test3,file-upload,Input,file,id,"//*[@id=""file-upload""]",C:\fakepath\Screenshot 2026-01-27 at 1.02.56 PM.png
+test3,Save & Continue,click,submit,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]",
+test3,otp-input-0,click,text | max:1,id,"//*[@id=""otp-input-0""]",
+test3,otp-input-0,Input,text | max:1,id,"//*[@id=""otp-input-0""]",1
+test3,otp-input-1,Input,text | max:1,id,"//*[@id=""otp-input-1""]",2
+test3,otp-input-2,Input,text | max:1,id,"//*[@id=""otp-input-2""]",1
+test3,otp-input-3,Input,text | max:1,id,"//*[@id=""otp-input-3""]",2
+test3,otp-input-4,Input,text | max:1,id,"//*[@id=""otp-input-4""]",1
+test3,otp-input-5,Input,text | max:1,id,"//*[@id=""otp-input-5""]",2
+test3,Verify OTP,click,submit,data-testid,"//*[@data-testid=""submit-button""]",
+test3,Choose an option,click,submit,data-testid,"//*[@data-testid=""dropdown-button""]",
+test3,Passport,click,li,data-testid,"//*[@data-testid=""option-0""]",
+test3,Select File,click,label,data-testid,"//*[@data-testid=""file-upload-label""]",
+test3,upload-front-input,click,file,id,"//*[@id=""upload-front-input""]",
+test3,upload-front-input,Input,file,id,"//*[@id=""upload-front-input""]",C:\fakepath\AVINASH_PASS.png
+test3,Continue,click,submit,data-testid,"//*[@data-testid=""continue-button""]",
+test3,Choose an option,click,submit,data-testid,"//*[@data-testid=""dropdown-button""]",
+test3,National Identification Card,click,li,data-testid,"//*[@data-testid=""option-1""]",
+test3,Upload Front of ID,click,label,data-testid,"//*[@data-testid=""file-upload-label""]",
+test3,upload-front-input,click,file,id,"//*[@id=""upload-front-input""]",
+test3,upload-front-input,Input,file,id,"//*[@id=""upload-front-input""]",C:\fakepath\DAVID_N_F.png
+test3,Upload Back of ID,click,label,data-testid,"//*[@data-testid=""file-upload-back-label""]",
+test3,upload-back-input,click,file,id,"//*[@id=""upload-back-input""]",
+test3,upload-back-input,Input,file,id,"//*[@id=""upload-back-input""]",C:\fakepath\DAVID_N_B.png
+test3,Continue,click,submit,data-testid,"//*[@data-testid=""continue-button""]",
+test3,Choose an option,click,submit,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/button[1],
+test3,FLOW BILL,click,li,data-testid,"//*[@data-testid=""option-0""]",
+test3,Select File,click,label,data-testid,"//*[@data-testid=""file-upload-label""]",
+test3,upload-front-input,click,file,id,"//*[@id=""upload-front-input""]",
+test3,upload-front-input,Input,file,id,"//*[@id=""upload-front-input""]",C:\fakepath\FlowBill.jpg
+test3,mailingCity,click,text | max:50,id,"//*[@id=""mailingCity""]",
+test3,mailingCity,Input,text | max:50,id,"//*[@id=""mailingCity""]",TRINCITY
+test3,div,click,div,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/div[1],
+test3,permanentAddressSameAsMailing,click,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/input[1],
+test3,permanentAddressSameAsMailing,Input,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/input[1],true
+test3,div,click,div,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/div[1]/div[1],
+test3,utilityDocOption,click,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/input[1],
+test3,utilityDocOption,Input,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/input[1],true
+test3,Save and Continue,click,submit,data-testid,"//*[@data-testid=""save-and-continue-button""]",
+test3,Select Employment Status,click,submit,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select Employment Status"")]",
+test3,FULL TIME PERMANENT,click,li,data-testid,"//*[@data-testid=""option-0""]",
+test3,Select Employer,click,submit,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Select Employer"")]",
+test3,ABT ENGINEERS & CONSTRUCTORS L,click,li,data-testid,"//*[@data-testid=""option-0""]",
+test3,:rt:-year,click,span | inputmode:numeric,id,"//*[@id="":rt:-year""]",
+test3,occupation,click,text,id,"//*[@id=""occupation""]",
+test3,occupation,Input,text,id,"//*[@id=""occupation""]",ENGINEEER
+test3,Choose sector,click,submit,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose sector"")]",
+test3,PRIVATE SECTOR,click,li,data-testid,"//*[@data-testid=""option-1""]",
+test3,Choose Employment Type,click,submit,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose Employment Type"")]",
+test3,Agricultural,click,li,data-testid,"//*[@data-testid=""option-0""]",
+test3,employerAddressLine1,click,text | max:100,id,"//*[@id=""employerAddressLine1""]",
+test3,employerAddressLine1,Input,text | max:100,id,"//*[@id=""employerAddressLine1""]",17 NORTHAM RD
+test3,employerCity,click,text | max:50,id,"//*[@id=""employerCity""]",
+test3,employerCity,Input,text | max:50,id,"//*[@id=""employerCity""]",TRINCITY
+test3,Choose Country,click,submit,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose Country"")]",
+test3,TRINIDAD AND TOBAGO,click,li,data-testid,"//*[@data-testid=""option-0""]",
+test3,workPhoneNo,click,tel,id,"//*[@id=""workPhoneNo""]",
+test3,workPhoneNo,Input,tel,id,"//*[@id=""workPhoneNo""]",457-2838
+test3,Choose an option,click,submit,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Choose an option"")]",
+test3,"$12,001-$17,000",click,li,data-testid,"//*[@data-testid=""option-0""]",
+test3,Salary Frequency,click,submit,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Salary Frequency"")]",
+test3,ANNUALLY,click,li,data-testid,"//*[@data-testid=""option-0""]",
+test3,salary,click,text,name,"//input[@name=""salary""]",
+test3,salary,Input,text,name,"//input[@name=""salary""]","$ 13,000.00"
+test3,Account Funded,click,submit,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Account Funded"")]",
+test3,Via Salary,click,li,data-testid,"//*[@data-testid=""option-0""]",
+test3,div,click,div,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/div[1]/div[1],
+test3,nationalOfTTPrimary,click,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1],
+test3,nationalOfTTPrimary,Input,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/label[1]/input[1],true
+test3,Country of birth,click,submit,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Country of birth"")]",
+test3,TRINIDAD AND TOBAGO,click,li,data-testid,"//*[@data-testid=""option-0""]",
+test3,placeOfBirth,click,text,id,"//*[@id=""placeOfBirth""]",
+test3,placeOfBirth,Input,text,id,"//*[@id=""placeOfBirth""]",TRINCITY
+test3,div,click,div,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/div[1]/div[1],
+test3,nationalOfTTSecondary,click,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1],
+test3,nationalOfTTSecondary,Input,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[2]/div[1]/label[1]/input[1],true
+test3,Marital Status,click,submit,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Marital Status"")]",
+test3,SINGLE,click,li,data-testid,"//*[@data-testid=""option-5""]",
+test3,Highest Level of Education,click,span,data-testid+text,"//*[@data-testid=""dropdown-text"" and contains(., ""Highest Level of Education"")]",
+test3,POSTGRADUATE DEGREE,click,li,data-testid,"//*[@data-testid=""option-1""]",
+test3,Communication Method,click,submit,data-testid+text,"//*[@data-testid=""dropdown-button"" and contains(., ""Communication Method"")]",
+test3,Email,click,li,data-testid,"//*[@data-testid=""option-0""]",
+test3,div,click,div,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[2]/div[1],
+test3,memberOfOtherCreditUnion,click,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[2]/input[1],
+test3,memberOfOtherCreditUnion,Input,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[1]/div[2]/div[1]/label[2]/input[1],false
+test3,Save & Continue,click,submit,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]",
