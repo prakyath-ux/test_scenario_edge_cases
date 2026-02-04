@@ -1,0 +1,26 @@
+Step,Group,Element,Action,Property,XPath,Value
+1,personal info section,firstName,click,text,"//*[@id=""firstName""]",
+2,personal info section,firstName,Input,text,"//*[@id=""firstName""]",PRAKYATHHHMC
+3,personal info section,email,click,email,"//*[@id=""email""]",
+4,personal info section,email,Input,email,"//*[@id=""email""]",P716@GMAIL.COM
+5,personal info section,middleName,click,text,"//*[@id=""middleName""]",
+6,personal info section,middleName,Input,text,"//*[@id=""middleName""]",M
+7,personal info section,mobileNumber,click,tel,"//*[@id=""mobileNumber""]",
+8,personal info section,mobileNumber,Input,tel,"//*[@id=""mobileNumber""]",342-4523
+9,personal info section,lastName,click,text,"//*[@id=""lastName""]",
+10,personal info section,lastName,Input,text,"//*[@id=""lastName""]",CHANDRAN
+11,personal info section,Select Branch,click,submit,"//*[@data-testid=""dropdown-button""]",
+12,personal info section,100 - TECU - MARABELLA BRANCH,click,li,"//*[@data-testid=""option-0""]",
+13,personal info section,Add profile picture,click,submit,"//*[@data-testid=""button"" and contains(., ""Add profile picture"")]",
+14,personal info section,Upload,click,label,"//*[@data-testid=""upload-button""]",
+15,personal info section,file-upload,click,file,"//*[@id=""file-upload""]",
+16,personal info section,file-upload,Input,file,"//*[@id=""file-upload""]",C:\fakepath\Screenshot 2026-01-27 at 1.02.56 PM.png
+17,personal info section,Save & Continue,click,submit,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]",
+18,personal info section,otp-input-0,click,text | max:1,"//*[@id=""otp-input-0""]",
+19,personal info section,otp-input-0,Input,text | max:1,"//*[@id=""otp-input-0""]",1
+20,personal info section,otp-input-1,Input,text | max:1,"//*[@id=""otp-input-1""]",2
+21,personal info section,otp-input-2,Input,text | max:1,"//*[@id=""otp-input-2""]",1
+22,personal info section,otp-input-3,Input,text | max:1,"//*[@id=""otp-input-3""]",2
+23,personal info section,otp-input-4,Input,text | max:1,"//*[@id=""otp-input-4""]",1
+24,personal info section,otp-input-5,Input,text | max:1,"//*[@id=""otp-input-5""]",2
+25,personal info section,Verify OTP,click,submit,"//*[@data-testid=""submit-button""]",

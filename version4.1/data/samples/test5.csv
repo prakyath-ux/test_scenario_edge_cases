@@ -1,0 +1,55 @@
+Step,Group,Element,Action,Property,XPath,Value
+1,,firstName,click,text,"//*[@id=""firstName""]",
+2,,firstName,Input,text,"//*[@id=""firstName""]",PRAKYATHHHHMCC
+3,,email,click,email,"//*[@id=""email""]",
+4,,email,Input,email,"//*[@id=""email""]",PRA262@GMAIL.COM
+5,,middleName,click,text,"//*[@id=""middleName""]",
+6,,middleName,Input,text,"//*[@id=""middleName""]",M
+7,,mobileNumber,click,tel,"//*[@id=""mobileNumber""]",
+8,,mobileNumber,Input,tel,"//*[@id=""mobileNumber""]",258-8952
+9,,lastName,click,text,"//*[@id=""lastName""]",
+10,,lastName,Input,text,"//*[@id=""lastName""]",CHANDRAN
+11,,Select Branch,click,submit,"//*[@data-testid=""dropdown-button""]",
+12,,200 - TECU - COUVA BRANCH,click,li,"//*[@data-testid=""option-1""]",
+13,,Add profile picture,click,submit,"//*[@data-testid=""button"" and contains(., ""Add profile picture"")]",
+14,,Upload,click,label,"//*[@data-testid=""upload-button""]",
+15,,file-upload,click,file,"//*[@id=""file-upload""]",
+16,,file-upload,Input,file,"//*[@id=""file-upload""]",C:\fakepath\Screenshot 2026-01-27 at 1.02.56 PM.png
+17,,Save & Continue,click,submit,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]",
+18,,otp-input-0,click,text | max:1,"//*[@id=""otp-input-0""]",
+19,,otp-input-0,Input,text | max:1,"//*[@id=""otp-input-0""]",1
+20,,otp-input-1,Input,text | max:1,"//*[@id=""otp-input-1""]",2
+21,,otp-input-2,Input,text | max:1,"//*[@id=""otp-input-2""]",1
+22,,otp-input-3,Input,text | max:1,"//*[@id=""otp-input-3""]",2
+23,,otp-input-4,Input,text | max:1,"//*[@id=""otp-input-4""]",1
+24,,otp-input-5,Input,text | max:1,"//*[@id=""otp-input-5""]",2
+25,,Verify OTP,click,submit,"//*[@data-testid=""submit-button""]",
+26,,Choose an option,click,submit,"//*[@data-testid=""dropdown-button""]",
+27,,Passport,click,li,"//*[@data-testid=""option-0""]",
+28,,Select File,click,label,"//*[@data-testid=""file-upload-label""]",
+29,,upload-front-input,click,file,"//*[@id=""upload-front-input""]",
+30,,upload-front-input,Input,file,"//*[@id=""upload-front-input""]",C:\fakepath\AVINASH_PASS.png
+31,,Continue,click,submit,"//*[@data-testid=""continue-button""]",
+32,,Choose an option,click,submit,"//*[@data-testid=""dropdown-button""]",
+33,,National Identification Card,click,li,"//*[@data-testid=""option-1""]",
+34,,Upload Front of ID,click,label,"//*[@data-testid=""file-upload-label""]",
+35,,upload-front-input,click,file,"//*[@id=""upload-front-input""]",
+36,,upload-front-input,Input,file,"//*[@id=""upload-front-input""]",C:\fakepath\DAVID_N_F.png
+37,,Upload Back of ID,click,label,"//*[@data-testid=""file-upload-back-label""]",
+38,,upload-back-input,click,file,"//*[@id=""upload-back-input""]",
+39,,upload-back-input,Input,file,"//*[@id=""upload-back-input""]",C:\fakepath\DAVID_N_B (1).png
+40,,Continue,click,submit,"//*[@data-testid=""continue-button""]",
+41,,Choose an option,click,submit,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/button[1],
+42,,FLOW BILL,click,li,"//*[@data-testid=""option-0""]",
+43,,Select File,click,label,"//*[@data-testid=""file-upload-label""]",
+44,,upload-front-input,click,file,"//*[@id=""upload-front-input""]",
+45,,upload-front-input,Input,file,"//*[@id=""upload-front-input""]",C:\fakepath\FlowBill.jpg
+46,,mailingCity,click,text | max:50,"//*[@id=""mailingCity""]",
+47,,mailingCity,Input,text | max:50,"//*[@id=""mailingCity""]",TRINCITY
+48,,Yes,click,label,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1],
+49,,permanentAddressSameAsMailing,click,radio,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/input[1],
+50,,permanentAddressSameAsMailing,Input,radio,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/input[1],true
+51,,div,click,div,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/div[1]/div[1],
+52,,utilityDocOption,click,radio,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/input[1],
+53,,utilityDocOption,Input,radio,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/input[1],true
+54,,Save and Continue,click,submit,"//*[@data-testid=""save-and-continue-button""]",

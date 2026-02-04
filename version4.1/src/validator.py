@@ -40,15 +40,15 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
     """
     Main validation function for edge case test data CSV.
 
-    Expected structure (v4.1):
-    - Row 0: Group (section/group names)
-    - Row 1: Description (element names)
-    - Row 2: Action (click/input)
-    - Row 3: Property (element types)
-    - Row 4: Strategy (xpath strategy used)
+    Expected structure (v4.1 updated):
+    - Row 0: Steps (1, 2, 3, ...)
+    - Row 1: Group (section/group names)
+    - Row 2: Elements (element names)
+    - Row 3: Action (click/input)
+    - Row 4: Property (element types)
     - Row 5: XPath (locators)
     - Row 6: Perfect_Template (all valid values)
-    - Row 7+: Edge case test rows
+    - Row 7+: Value_fieldName (edge case test rows)
     """
     result = ValidationResult()
 
@@ -82,7 +82,7 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
 
     # === CHECK 3: Header row labels ===
     first_col = df.iloc[:, 0].tolist()
-    expected_headers = ["Group", "Description", "Action", "Property", "Strategy", "XPath", "Perfect_Template"]
+    expected_headers = ["Steps", "Group", "Elements", "Action", "Property", "XPath", "Perfect_Template"]
 
     header_issues = []
     for i, expected in enumerate(expected_headers):
@@ -93,10 +93,10 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
     if header_issues:
         result.add_fail("Header Row Labels", "; ".join(header_issues))
     else:
-        result.add_pass("Header Row Labels", "All 7 header rows found (Group, Description, Action, Property, Strategy, XPath, Perfect_Template)")
+        result.add_pass("Header Row Labels", "All 7 header rows found (Steps, Group, Elements, Action, Property, XPath, Perfect_Template)")
 
     # === CHECK 4: Action row values ===
-    action_row = df.iloc[2, 1:].tolist()  # Row 2 is Action (skip first column)
+    action_row = df.iloc[3, 1:].tolist()  # Row 3 is Action (skip first column)
     valid_actions = {'click', 'input', 'change'}
     invalid_actions = []
 
@@ -214,7 +214,7 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
         result.add_pass("Edge Case Count", "All edge case fields have 4 values")
 
     # === CHECK 11: Click values preserved ===
-    action_row = df.iloc[2, 1:].tolist()  # Row 2 is Action
+    action_row = df.iloc[3, 1:].tolist()  # Row 3 is Action
     click_columns = [i for i, a in enumerate(action_row) if str(a).lower() == 'click']
 
     click_modified = []
@@ -234,28 +234,30 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
     else:
         result.add_pass("Click Values Preserved", "All click values remain 'Click'")
 
-    # === CHECK 12: Row descriptions include field names ===
-    edge_case_descriptions = df.iloc[7:, 0].tolist()  # Edge cases start at row 7
-    missing_field_name = []
+    # === CHECK 12: Row names follow Value_fieldName pattern ===
+    edge_case_row_names = df.iloc[7:, 0].tolist()  # Edge cases start at row 7
+    invalid_names = []
 
-    # Get input field names from Description row (row 1)
+    # Get input field names from Elements row (row 2)
     input_columns = [i for i, a in enumerate(action_row) if str(a).lower() in ['input', 'change']]
-    field_names = [str(df.iloc[1, i+1]).lower() for i in input_columns if i+1 < len(df.columns)]
+    field_names = [str(df.iloc[2, i+1]).lower() for i in input_columns if i+1 < len(df.columns)]
 
-    for idx, desc in enumerate(edge_case_descriptions):
-        desc_lower = str(desc).lower()
-        # Check if description contains any field name
-        has_field = any(fn in desc_lower for fn in field_names if fn)
-        if not has_field and desc_lower not in ['', 'nan']:
-            missing_field_name.append(f"Row {idx+7}: '{desc}'")
+    for idx, name in enumerate(edge_case_row_names):
+        name_str = str(name).strip()
+        # Check if name follows Value_fieldName pattern or contains a field name
+        if name_str.lower() not in ['', 'nan']:
+            has_value_prefix = name_str.lower().startswith('value_')
+            has_field = any(fn in name_str.lower() for fn in field_names if fn)
+            if not has_value_prefix and not has_field:
+                invalid_names.append(f"Row {idx+7}: '{name_str}'")
 
-    if missing_field_name and len(missing_field_name) > len(edge_case_descriptions) * 0.3:
+    if invalid_names and len(invalid_names) > len(edge_case_row_names) * 0.3:
         result.add_warning(
-            "Row Descriptions",
-            f"Some rows don't clearly indicate target field: {missing_field_name[:3]}"
+            "Row Names (Value_fieldName)",
+            f"Some rows don't follow naming pattern: {invalid_names[:3]}"
         )
     else:
-        result.add_pass("Row Descriptions", "Edge case rows have descriptive names")
+        result.add_pass("Row Names", "Edge case rows follow Value_fieldName pattern")
 
     return result
 

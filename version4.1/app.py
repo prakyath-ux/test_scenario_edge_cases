@@ -48,16 +48,16 @@ def transpose_to_company_format(entries):
     Transpose vertical data to horizontal company format.
 
     Input (vertical):
-        Each entry: {label, action, property, xpath, values, strategy, group}
+        Each entry: {label, action, property, xpath, values, group}
 
     Output (horizontal):
-        Row 1: Group       | (blank for assignment) | ...
-        Row 2: Description | Element1 | Element2 | ...
+        Row 0: Steps       | 1        | 2        | ...
+        Row 1: Group       | group1   | group1   | ...
+        Row 2: Elements    | Element1 | Element2 | ...
         Row 3: Action      | click    | input    | ...
         Row 4: Property    | text     | text     | ...
-        Row 5: Strategy    | id       | name     | ...
-        Row 6: XPath       | //*[...]| //*[...] | ...
-        Row 7: Value       | Click   | JOHN     | ...
+        Row 5: XPath       | //*[...]| //*[...] | ...
+        Row 6: Value       | Click   | JOHN     | ...
     """
     if not entries:
         return pd.DataFrame()
@@ -67,17 +67,19 @@ def transpose_to_company_format(entries):
     groups = [e.get("group", "") for e in entries]
     actions = [e["action"] for e in entries]
     properties = [e.get("property", "") for e in entries]
-    strategies = [e.get("strategy", "") for e in entries]
     xpaths = [e["xpath"] for e in entries]
     values = ["Click" if e["action"] == "click" else e.get("values", "") for e in entries]
 
-    # Create transposed rows
+    # Generate step numbers (1, 2, 3, ...)
+    steps = [str(i + 1) for i in range(len(entries))]
+
+    # Create transposed rows (no Strategy row)
     rows = [
+        ["Steps"] + steps,
         ["Group"] + groups,
-        ["Description"] + labels,
+        ["Elements"] + labels,
         ["Action"] + actions,
         ["Property"] + properties,
-        ["Strategy"] + strategies,
         ["XPath"] + xpaths,
         ["Value"] + values
     ]
@@ -394,14 +396,16 @@ if st.session_state.recording:
             # Display based on view mode
             if view_mode == "Vertical (Standard)":
                 df = pd.DataFrame(recent_entries)
-                # Reorder columns - Group first, Value last for visibility
-                display_cols = ["group", "label", "action", "property", "strategy", "xpath", "values"]
+                # Add Step column
+                df.insert(0, 'step', range(1, len(df) + 1))
+                # Reorder columns - Step first, Group, then rest (no Strategy)
+                display_cols = ["step", "group", "label", "action", "property", "xpath", "values"]
                 available_cols = [c for c in display_cols if c in df.columns]
                 if available_cols:
                     df = df[available_cols]
                     # Rename columns dynamically based on what's available
-                    col_names = {"group": "Group", "label": "Element", "action": "Action",
-                                 "property": "Property", "strategy": "Strategy", "xpath": "XPath", "values": "Value"}
+                    col_names = {"step": "Step", "group": "Group", "label": "Element", "action": "Action",
+                                 "property": "Property", "xpath": "XPath", "values": "Value"}
                     df.columns = [col_names.get(c, c) for c in available_cols]
                 st.dataframe(df, use_container_width=True, height=400)
             else:
@@ -418,12 +422,14 @@ if st.session_state.recording:
 
             # Prepare vertical CSV for download
             export_df = pd.DataFrame(entries)
-            export_cols = ["group", "label", "action", "property", "strategy", "xpath", "values"]
+            # Add Step column
+            export_df.insert(0, 'step', range(1, len(export_df) + 1))
+            export_cols = ["step", "group", "label", "action", "property", "xpath", "values"]
             available_export_cols = [c for c in export_cols if c in export_df.columns]
             if available_export_cols:
                 export_df = export_df[available_export_cols]
-                col_names = {"group": "Group", "label": "Element", "action": "Action",
-                             "property": "Property", "strategy": "Strategy", "xpath": "XPath", "values": "Value"}
+                col_names = {"step": "Step", "group": "Group", "label": "Element", "action": "Action",
+                             "property": "Property", "xpath": "XPath", "values": "Value"}
                 export_df.columns = [col_names.get(c, c) for c in available_export_cols]
 
             # Prepare transposed CSV for download
@@ -457,13 +463,13 @@ if st.session_state.recording:
             # Show latest entry highlighted
             st.markdown("##### Latest Capture")
             latest = entries[-1]
-            st.code(f"""Group:    {latest.get('group', '')}
+            st.code(f"""Step:     {len(entries)}
+Group:    {latest.get('group', '')}
 Element:  {latest['label']}
 Action:   {latest['action']}
 Property: {latest.get('property', '')}
 Value:    {latest.get('values', '')}
-XPath:    {latest['xpath']}
-Strategy: {latest['strategy']}""")
+XPath:    {latest['xpath']}""")
 
     # Auto-refresh logic
     if auto_refresh:
@@ -597,7 +603,7 @@ gen_tab, val_tab = st.tabs(["🧪 Generate", "✅ Validate"])
 # -------- GENERATE SUB-TAB --------
 with gen_tab:
     st.markdown("**Upload recorded flow CSV to generate edge case test data**")
-    st.caption("Input: Vertical CSV from recorder (columns: Group, Element, Action, Property, Strategy, XPath, Value)")
+    st.caption("Input: Vertical CSV from recorder (columns: Step, Group, Element, Action, Property, XPath, Value)")
 
     gen_file = st.file_uploader("Upload recorded flow CSV", type=['csv'], key="gen_upload")
 
@@ -727,7 +733,9 @@ firstName|||Tests firstName validation - empty value should trigger required fie
                     description = f"Tests {field_name} validation - empty, special chars, numeric, long input"
                     edge_values = " | @#$%^&*<> | 12345 | " + "A" * 50
 
-                row = [f"{field_name} ({group})" if group else field_name]
+                # Row name format: Value_fieldName (for regex matching)
+                row_name = f"Value_{field_name}"
+                row = [row_name]
                 for i, (val, ftype) in enumerate(zip(transposed['values'], transposed['field_types'])):
                     row.append(edge_values if i == idx else val)
 
@@ -738,12 +746,15 @@ firstName|||Tests firstName validation - empty value should trigger required fie
             return edge_case_rows
 
         def create_output_dataframe(transposed: dict, edge_case_rows: list) -> pd.DataFrame:
+            # Generate step numbers (1, 2, 3, ...)
+            steps = [str(i + 1) for i in range(len(transposed['descriptions']))]
+
             rows = [
+                ['Steps'] + steps,
                 ['Group'] + transposed['groups'],
-                ['Description'] + transposed['descriptions'],
+                ['Elements'] + transposed['descriptions'],
                 ['Action'] + transposed['actions'],
                 ['Property'] + transposed['properties'],
-                ['Strategy'] + transposed['strategies'],
                 ['XPath'] + transposed['xpaths'],
                 ['Perfect_Template (Valid Flow)'] + transposed['values']
             ]
@@ -752,6 +763,8 @@ firstName|||Tests firstName validation - empty value should trigger required fie
             return pd.DataFrame(rows)
 
         def create_description_summary(edge_case_rows: list) -> pd.DataFrame:
+            # 7 header rows: Steps, Group, Elements, Action, Property, XPath, Perfect_Template
+            # Edge cases start at Row 8
             return pd.DataFrame([{
                 'Row': f'Row {i + 8}',
                 'Target Field': er['target_field'],
@@ -829,19 +842,20 @@ firstName|||Tests firstName validation - empty value should trigger required fie
                     else:
                         vertical_rows = []
                         if len(output_df) >= 7:
-                            groups = output_df.iloc[0, 1:].tolist()
-                            descriptions = output_df.iloc[1, 1:].tolist()
-                            actions = output_df.iloc[2, 1:].tolist()
-                            properties = output_df.iloc[3, 1:].tolist()
-                            strategies = output_df.iloc[4, 1:].tolist()
+                            # Row indices: 0=Steps, 1=Group, 2=Elements, 3=Action, 4=Property, 5=XPath, 6=Values
+                            steps = output_df.iloc[0, 1:].tolist()
+                            groups = output_df.iloc[1, 1:].tolist()
+                            elements = output_df.iloc[2, 1:].tolist()
+                            actions = output_df.iloc[3, 1:].tolist()
+                            properties = output_df.iloc[4, 1:].tolist()
                             xpaths = output_df.iloc[5, 1:].tolist()
                             values = output_df.iloc[6, 1:].tolist()
 
-                            for i in range(len(descriptions)):
+                            for i in range(len(elements)):
                                 vertical_rows.append({
-                                    'Group': groups[i], 'Element': descriptions[i],
+                                    'Step': steps[i], 'Group': groups[i], 'Element': elements[i],
                                     'Action': actions[i], 'Property': properties[i],
-                                    'Strategy': strategies[i], 'XPath': xpaths[i], 'Value': values[i]
+                                    'XPath': xpaths[i], 'Value': values[i]
                                 })
 
                         vertical_df = pd.DataFrame(vertical_rows)
@@ -860,18 +874,19 @@ firstName|||Tests firstName validation - empty value should trigger required fie
                     with col2:
                         vertical_export = []
                         if len(output_df) >= 7:
-                            groups = output_df.iloc[0, 1:].tolist()
-                            descriptions = output_df.iloc[1, 1:].tolist()
-                            actions = output_df.iloc[2, 1:].tolist()
-                            properties = output_df.iloc[3, 1:].tolist()
-                            strategies = output_df.iloc[4, 1:].tolist()
+                            # Row indices: 0=Steps, 1=Group, 2=Elements, 3=Action, 4=Property, 5=XPath, 6=Values
+                            steps = output_df.iloc[0, 1:].tolist()
+                            groups = output_df.iloc[1, 1:].tolist()
+                            elements = output_df.iloc[2, 1:].tolist()
+                            actions = output_df.iloc[3, 1:].tolist()
+                            properties = output_df.iloc[4, 1:].tolist()
                             xpaths = output_df.iloc[5, 1:].tolist()
                             values = output_df.iloc[6, 1:].tolist()
-                            for i in range(len(descriptions)):
+                            for i in range(len(elements)):
                                 vertical_export.append({
-                                    'Group': groups[i], 'Element': descriptions[i],
+                                    'Step': steps[i], 'Group': groups[i], 'Element': elements[i],
                                     'Action': actions[i], 'Property': properties[i],
-                                    'Strategy': strategies[i], 'XPath': xpaths[i], 'Value': values[i]
+                                    'XPath': xpaths[i], 'Value': values[i]
                                 })
                         vert_df = pd.DataFrame(vertical_export)
                         st.download_button(
