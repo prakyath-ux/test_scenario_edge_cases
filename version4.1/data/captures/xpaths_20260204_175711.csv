@@ -1,14 +1,14 @@
 Label,XPath,Strategy,Matches,Action,Value,Property
 firstName,"//*[@id=""firstName""]",id,1,click,,text
-firstName,"//*[@id=""firstName""]",id,1,Input,PRAKYYYATH,text
+firstName,"//*[@id=""firstName""]",id,1,Input,SWARAJ,text
 email,"//*[@id=""email""]",id,1,click,,email
-email,"//*[@id=""email""]",id,1,Input,PPP@GMAIL.COM,email
+email,"//*[@id=""email""]",id,1,Input,S@GMAIL.COM,email
 middleName,"//*[@id=""middleName""]",id,1,click,,text
-middleName,"//*[@id=""middleName""]",id,1,Input,M,text
+middleName,"//*[@id=""middleName""]",id,1,Input,DH,text
 mobileNumber,"//*[@id=""mobileNumber""]",id,1,click,,tel
-mobileNumber,"//*[@id=""mobileNumber""]",id,1,Input,453-2782,tel
+mobileNumber,"//*[@id=""mobileNumber""]",id,1,Input,473-8328,tel
 lastName,"//*[@id=""lastName""]",id,1,click,,text
-lastName,"//*[@id=""lastName""]",id,1,Input,CHANDRAN,text
+lastName,"//*[@id=""lastName""]",id,1,Input,SENIOR,text
 Select Branch,"//*[@data-testid=""dropdown-button""]",data-testid,1,click,,submit
 100 - TECU - MARABELLA BRANCH,"//*[@data-testid=""option-0""]",data-testid,1,click,,li
 Add profile picture,"//*[@data-testid=""button"" and contains(., ""Add profile picture"")]",data-testid+text,1,click,,submit

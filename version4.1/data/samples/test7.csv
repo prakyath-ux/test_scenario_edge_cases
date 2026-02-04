@@ -1,0 +1,27 @@
+Step,Group,Element,Property,Action,XPath,Value
+1,PERSONAL INFORMATIONS,firstName,text,click,"//*[@id=""firstName""]",
+2,PERSONAL INFORMATIONS,firstName,text,Input,"//*[@id=""firstName""]",JOHN
+3,PERSONAL INFORMATIONS,email,email,click,"//*[@id=""email""]",
+4,PERSONAL INFORMATIONS,email,email,Input,"//*[@id=""email""]",J12@GMAIL.COM
+5,PERSONAL INFORMATIONS,middleName,text,click,"//*[@id=""middleName""]",
+6,PERSONAL INFORMATIONS,middleName,text,Input,"//*[@id=""middleName""]",M
+7,PERSONAL INFORMATIONS,mobileNumber,tel,click,"//*[@id=""mobileNumber""]",
+8,PERSONAL INFORMATIONS,mobileNumber,tel,Input,"//*[@id=""mobileNumber""]",542-3123
+9,PERSONAL INFORMATIONS,Last Name*,div,click,"//div[contains(@class, ""md:order-5"")]",
+10,PERSONAL INFORMATIONS,lastName,text,click,"//*[@id=""lastName""]",
+11,PERSONAL INFORMATIONS,lastName,text,Input,"//*[@id=""lastName""]",DOE
+12,PERSONAL INFORMATIONS,Select Branch,submit,click,"//*[@data-testid=""dropdown-button""]",
+13,PERSONAL INFORMATIONS,100 - TECU - MARABELLA BRANCH,li,click,"//*[@data-testid=""option-0""]",
+14,PERSONAL INFORMATIONS,Add profile picture,submit,click,"//*[@data-testid=""button"" and contains(., ""Add profile picture"")]",
+15,PERSONAL INFORMATIONS,Upload,label,click,"//*[@data-testid=""upload-button""]",
+16,PERSONAL INFORMATIONS,file-upload,file,click,"//*[@id=""file-upload""]",
+17,PERSONAL INFORMATIONS,file-upload,file,Input,"//*[@id=""file-upload""]",C:\fakepath\Screenshot 2026-01-27 at 1.02.56 PM.png
+18,PERSONAL INFORMATIONS,Save & Continue,submit,click,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]",
+19,PERSONAL INFORMATIONS,otp-input-0,text | max:1,click,"//*[@id=""otp-input-0""]",
+20,PERSONAL INFORMATIONS,otp-input-0,text | max:1,Input,"//*[@id=""otp-input-0""]",1
+21,PERSONAL INFORMATIONS,otp-input-1,text | max:1,Input,"//*[@id=""otp-input-1""]",2
+22,PERSONAL INFORMATIONS,otp-input-2,text | max:1,Input,"//*[@id=""otp-input-2""]",1
+23,PERSONAL INFORMATIONS,otp-input-3,text | max:1,Input,"//*[@id=""otp-input-3""]",2
+24,PERSONAL INFORMATIONS,otp-input-4,text | max:1,Input,"//*[@id=""otp-input-4""]",1
+25,PERSONAL INFORMATIONS,otp-input-5,text | max:1,Input,"//*[@id=""otp-input-5""]",2
+26,PERSONAL INFORMATIONS,Verify OTP,submit,click,"//*[@data-testid=""submit-button""]",

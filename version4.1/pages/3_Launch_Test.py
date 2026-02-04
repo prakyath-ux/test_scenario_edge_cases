@@ -1,11 +1,11 @@
-# pages/2_Test_Data.py - Automation: Upload, Schedule, Reports
+# pages/3_Launch_Test.py - Automation: Upload, Schedule, Reports
 # This page handles automated test execution via Jenkins integration
 
 import streamlit as st
 import pandas as pd
 from datetime import datetime
 
-st.set_page_config(page_title="Test Automation", page_icon="🤖", layout="wide")
+st.set_page_config(page_title="Launch Test", page_icon="🚀", layout="wide")
 
 # CSS Styling
 st.markdown("""
@@ -38,12 +38,12 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🤖 Test Automation")
+st.title("🚀 Launch Test")
 st.markdown("*Upload test data, schedule Jenkins runs, and view reports*")
 st.divider()
 
 # ============ SECTION 1: UPLOAD ============
-st.subheader("📤 Upload Test Data")
+st.subheader("Upload Test Data (Under Development)")
 
 st.markdown("""
 <div class="automation-card">
@@ -80,7 +80,7 @@ else:
 st.divider()
 
 # ============ SECTION 2: SCHEDULE ============
-st.subheader("📅 Schedule Test Run")
+st.subheader("📅 Schedule Test Run (Under Development)")
 
 st.markdown("""
 <div class="automation-card">
@@ -111,7 +111,7 @@ with col2:
     if st.button("🚀 Schedule Run", type="primary", use_container_width=True, disabled=True):
         pass  # Placeholder
 
-    st.caption("⚠️ Jenkins integration coming soon")
+    st.caption(" Jenkins integration coming soon")
 
 st.markdown("""
 <div style="background-color: #262730; padding: 15px; border-radius: 8px; margin-top: 15px;">
@@ -128,7 +128,7 @@ st.markdown("""
 st.divider()
 
 # ============ SECTION 3: REPORTS ============
-st.subheader("📊 Test Reports")
+st.subheader(" Test Reports (Under Development)")
 
 st.markdown("""
 <div class="automation-card">
@@ -162,4 +162,4 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.divider()
-st.markdown("*Test Automation v4.1 • Jenkins Integration Pending*")
+st.markdown("*Launch Test v4.1 • Jenkins Integration Pending*")

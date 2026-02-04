@@ -1,0 +1,43 @@
+{
+  "url": "https://qa-tq-awp.impactodigifin.xyz/newapplication",
+  "captured_at": "2026-02-04T18:15:54.592770",
+  "total_elements": 4,
+  "xpaths": [
+    {
+      "label": "firstName",
+      "xpath": "//*[@id=\"firstName\"]",
+      "strategy": "id",
+      "matches": 1,
+      "action": "click",
+      "values": "",
+      "property": "text"
+    },
+    {
+      "label": "email",
+      "xpath": "//*[@id=\"email\"]",
+      "strategy": "id",
+      "matches": 1,
+      "action": "click",
+      "values": "",
+      "property": "email"
+    },
+    {
+      "label": "Middle Name (optional)",
+      "xpath": "//div[contains(@class, \"md:order-3\")]",
+      "strategy": "class",
+      "matches": 1,
+      "action": "click",
+      "values": "",
+      "property": "div"
+    },
+    {
+      "label": "mobileNumber",
+      "xpath": "//*[@id=\"mobileNumber\"]",
+      "strategy": "id",
+      "matches": 1,
+      "action": "click",
+      "values": "",
+      "property": "tel"
+    }
+  ]
+}

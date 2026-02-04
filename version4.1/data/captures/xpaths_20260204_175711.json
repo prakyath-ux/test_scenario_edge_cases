@@ -1,7 +1,7 @@
 {
   "url": "https://qa-tq-awp.impactodigifin.xyz/newapplication",
-  "captured_at": "2026-02-04T12:41:08.796515",
-  "total_elements": 28,
+  "captured_at": "2026-02-04T17:57:11.206901",
+  "total_elements": 25,
   "xpaths": [
     {
       "label": "firstName",
@@ -18,7 +18,7 @@
       "strategy": "id",
       "matches": 1,
       "action": "Input",
-      "values": "DAVEESDGFG",
+      "values": "SWARAJ",
       "property": "text"
     },
     {
@@ -36,7 +36,7 @@
       "strategy": "id",
       "matches": 1,
       "action": "Input",
-      "values": "AJTF1@GMAIL.COM",
+      "values": "S@GMAIL.COM",
       "property": "email"
     },
     {
@@ -54,17 +54,8 @@
       "strategy": "id",
       "matches": 1,
       "action": "Input",
-      "values": "HERBFGFGV",
+      "values": "DH",
       "property": "text"
-    },
-    {
-      "label": "Mobile Number*+1868",
-      "xpath": "//div[contains(@class, \"md:order-4\")]",
-      "strategy": "class",
-      "matches": 1,
-      "action": "click",
-      "values": "",
-      "property": "div"
     },
     {
       "label": "mobileNumber",
@@ -81,7 +72,7 @@
       "strategy": "id",
       "matches": 1,
       "action": "Input",
-      "values": "234-5432",
+      "values": "473-8328",
       "property": "tel"
     },
     {
@@ -99,7 +90,7 @@
       "strategy": "id",
       "matches": 1,
       "action": "Input",
-      "values": "CHAPPELLFGGAGVA",
+      "values": "SENIOR",
       "property": "text"
     },
     {
@@ -236,24 +227,6 @@
       "action": "click",
       "values": "",
       "property": "submit"
-    },
-    {
-      "label": "Verify Your EmailEnter the 6-d",
-      "xpath": "//*[@data-testid=\"modal-body\"]",
-      "strategy": "data-testid",
-      "matches": 1,
-      "action": "click",
-      "values": "",
-      "property": "div"
-    },
-    {
-      "label": "First Name*Email ID*Middle Nam",
-      "xpath": "//div[contains(@class, \"lg:grid-cols-2\")]",
-      "strategy": "class",
-      "matches": 1,
-      "action": "click",
-      "values": "",
-      "property": "div"
     }
   ]
 }
