@@ -155,13 +155,13 @@ if 'process' not in st.session_state:
 if 'last_json' not in st.session_state:
     st.session_state.last_json = None
 
-st.markdown("# 🎯 XPath Analytics Recorder")
+st.markdown("# XPath Analytics Recorder")
 st.markdown("*Automated element capture for QA testing*")
 
 st.divider()
 
 # ============ SECTION 1: RECORDING ============
-st.subheader("🎬 Record New Session")
+st.subheader(" Record New Session")
 
 col1, col2 = st.columns([3, 1])
 
@@ -193,7 +193,7 @@ if format_py:
 
 # Start/Stop buttons
 if not st.session_state.recording:
-    if st.button("🚀 Start Recording", type="primary", use_container_width=True):
+    if st.button(" Start Recording", type="primary", use_container_width=True):
         if not url_input:
             st.error("❌ Please enter a URL")
         elif not url_input.startswith(('http://', 'https://')):
@@ -255,7 +255,7 @@ st.divider()
 
 # ============ SECTION 2: LIVE VIEW (Only shown during recording) ============
 if st.session_state.recording:
-    st.subheader("👁️ Live Capture View")
+    st.subheader(" Live Capture View")
     st.markdown("*Real-time view of captured elements*")
 
     # Group assignment section
