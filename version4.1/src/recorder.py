@@ -181,14 +181,36 @@ XPATH_JS = """
         highlightElement(e.target);
     }, true);
 
+    // Get element property (type, inputmode, pattern, etc.)
+    function getElementProperty(el) {
+        const props = [];
+        const tag = el.tagName.toLowerCase();
+
+        // Input type
+        if (el.type) props.push(el.type);
+        else if (tag === 'select') props.push('select');
+        else if (tag === 'textarea') props.push('textarea');
+        else if (tag === 'button') props.push('button');
+        else props.push(tag);
+
+        // Additional attributes
+        if (el.inputMode) props.push('inputmode:' + el.inputMode);
+        if (el.pattern) props.push('pattern');
+        if (el.maxLength && el.maxLength > 0) props.push('max:' + el.maxLength);
+        if (el.required) props.push('required');
+
+        return props.join(' | ');
+    }
+
     // Click capture
     document.addEventListener('click', function(e) {
         const el = e.target;
         const result = getXPath(el);
         const label = el.id || el.name || el.placeholder || el.textContent.trim().slice(0, 30) || el.tagName.toLowerCase();
         const matches = countMatches(result.xpath);
+        const property = getElementProperty(el);
 
-        window.reportXPath(label, result.xpath, result.strategy, matches, 'click', '');
+        window.reportXPath(label, result.xpath, result.strategy, matches, 'click', '', property);
     }, true);
 
     // Change capture
@@ -198,7 +220,8 @@ XPATH_JS = """
     const label = el.id || el.name || el.placeholder || el.tagName.toLowerCase();
     const matches = countMatches(result.xpath);
     const value = el.type === 'checkbox' ? el.checked : el.value;
-    window.reportXPath(label, result.xpath, result.strategy, matches, 'Input', value);
+    const property = getElementProperty(el);
+    window.reportXPath(label, result.xpath, result.strategy, matches, 'Input', value, property);
     }, true);
 
 })();
@@ -224,7 +247,7 @@ XPATH_JS = """
 #         status = "UNIQUE" if matches == 1 else f"{matches} matches"
 #         print(f"[{len(captured_xpaths)}] {label} | {action} | {status}", flush=True)
 
-def handle_xpath(label, xpath, strategy, matches, action, values):
+def handle_xpath(label, xpath, strategy, matches, action, values, property=""):
     global live_capture_file
     key = f"{xpath}|{action}"
     is_update = key in captured_xpaths
@@ -235,7 +258,8 @@ def handle_xpath(label, xpath, strategy, matches, action, values):
         "strategy": strategy,
         "matches": matches,
         "action": action,
-        "values": values
+        "values": values,
+        "property": property
     }
 
     # write to live capture file for real-time viewing
@@ -248,6 +272,7 @@ def handle_xpath(label, xpath, strategy, matches, action, values):
             "matches": matches,
             "action": action,
             "values": values,
+            "property": property,
             "timestamp": datetime.now().isoformat()
         }
 
@@ -286,9 +311,9 @@ def save_json(filename, url):
 def save_csv(filename, url):
     with open(filename, 'w', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['Label', 'XPath', 'Strategy', 'Matches', 'Action', 'Value'])
+        writer.writerow(['Label', 'XPath', 'Strategy', 'Matches', 'Action', 'Value', 'Property'])
         for item in captured_xpaths.values():
-            writer.writerow([item["label"], item["xpath"], item["strategy"], item["matches"], item["action"], item["values"]])
+            writer.writerow([item["label"], item["xpath"], item["strategy"], item["matches"], item["action"], item["values"], item.get("property", "")])
 
 # the SIGTERM handler that saves files when streamlit stops the recorder
 def cleanup(signum=None, frame=None):

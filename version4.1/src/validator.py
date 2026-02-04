@@ -40,20 +40,23 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
     """
     Main validation function for edge case test data CSV.
 
-    Expected structure:
-    - Row 0: Description (element names)
-    - Row 1: Action (click/input)
-    - Row 2: XPath (locators)
-    - Row 3: Perfect_Template (all valid values)
-    - Row 4+: Edge case test rows
+    Expected structure (v4.1):
+    - Row 0: Group (section/group names)
+    - Row 1: Description (element names)
+    - Row 2: Action (click/input)
+    - Row 3: Property (element types)
+    - Row 4: Strategy (xpath strategy used)
+    - Row 5: XPath (locators)
+    - Row 6: Perfect_Template (all valid values)
+    - Row 7+: Edge case test rows
     """
     result = ValidationResult()
 
     # === CHECK 1: Minimum rows ===
-    if len(df) < 5:
+    if len(df) < 8:
         result.add_fail(
             "Minimum Rows",
-            f"Expected at least 5 rows (4 header + 1 test), got {len(df)}"
+            f"Expected at least 8 rows (7 header + 1 test), got {len(df)}"
         )
         return result  # Can't continue validation
     result.add_pass("Minimum Rows", f"{len(df)} rows found")
@@ -79,7 +82,7 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
 
     # === CHECK 3: Header row labels ===
     first_col = df.iloc[:, 0].tolist()
-    expected_headers = ["Description", "Action", "XPath", "Perfect_Template"]
+    expected_headers = ["Group", "Description", "Action", "Property", "Strategy", "XPath", "Perfect_Template"]
 
     header_issues = []
     for i, expected in enumerate(expected_headers):
@@ -90,10 +93,10 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
     if header_issues:
         result.add_fail("Header Row Labels", "; ".join(header_issues))
     else:
-        result.add_pass("Header Row Labels", "Description, Action, XPath, Perfect_Template found")
+        result.add_pass("Header Row Labels", "All 7 header rows found (Group, Description, Action, Property, Strategy, XPath, Perfect_Template)")
 
     # === CHECK 4: Action row values ===
-    action_row = df.iloc[1, 1:].tolist()  # Skip first column (label)
+    action_row = df.iloc[2, 1:].tolist()  # Row 2 is Action (skip first column)
     valid_actions = {'click', 'input', 'change'}
     invalid_actions = []
 
@@ -111,7 +114,7 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
         result.add_pass("Action Row Values", "All actions are click/input")
 
     # === CHECK 5: XPath row format ===
-    xpath_row = df.iloc[2, 1:].tolist()
+    xpath_row = df.iloc[5, 1:].tolist()  # Row 5 is XPath
     valid_xpaths = 0
     invalid_xpaths = []
 
@@ -133,7 +136,7 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
         result.add_pass("XPath Row Format", f"{valid_xpaths} valid XPaths found")
 
     # === CHECK 6: Perfect template row completeness ===
-    perfect_row = df.iloc[3, 1:].tolist()
+    perfect_row = df.iloc[6, 1:].tolist()  # Row 6 is Perfect_Template
     empty_in_perfect = sum(1 for v in perfect_row if pd.isna(v) or str(v).strip() == '')
 
     if empty_in_perfect > len(perfect_row) * 0.3:  # More than 30% empty
@@ -145,9 +148,9 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
         result.add_pass("Perfect Template Completeness", "Template row has values")
 
     # === CHECK 7: Edge case rows exist ===
-    edge_case_rows = df.iloc[4:]
+    edge_case_rows = df.iloc[7:]  # Edge cases start at row 7
     if len(edge_case_rows) == 0:
-        result.add_fail("Edge Case Rows", "No edge case test rows found (Row 5+)")
+        result.add_fail("Edge Case Rows", "No edge case test rows found (Row 8+)")
     else:
         result.add_pass("Edge Case Rows", f"{len(edge_case_rows)} edge case rows found")
 
@@ -155,7 +158,7 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
     rows_with_pipes = 0
     rows_without_pipes = []
 
-    for idx in range(4, len(df)):
+    for idx in range(7, len(df)):  # Edge cases start at row 7
         row = df.iloc[idx, 1:].tolist()  # Skip description column
         has_pipe = any('|' in str(v) for v in row if not pd.isna(v))
         if has_pipe:
@@ -177,7 +180,7 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
     # === CHECK 9: One edge case field per row ===
     multi_pipe_rows = []
 
-    for idx in range(4, len(df)):
+    for idx in range(7, len(df)):  # Edge cases start at row 7
         row = df.iloc[idx, 1:].tolist()
         pipe_count = sum(1 for v in row if not pd.isna(v) and '|' in str(v))
         if pipe_count > 1:
@@ -194,7 +197,7 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
     # === CHECK 10: Edge case value count (should be 4) ===
     incorrect_edge_count = []
 
-    for idx in range(4, len(df)):
+    for idx in range(7, len(df)):  # Edge cases start at row 7
         row = df.iloc[idx, 1:].tolist()
         for col_idx, val in enumerate(row):
             if not pd.isna(val) and '|' in str(val):
@@ -211,11 +214,11 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
         result.add_pass("Edge Case Count", "All edge case fields have 4 values")
 
     # === CHECK 11: Click values preserved ===
-    action_row = df.iloc[1, 1:].tolist()
+    action_row = df.iloc[2, 1:].tolist()  # Row 2 is Action
     click_columns = [i for i, a in enumerate(action_row) if str(a).lower() == 'click']
 
     click_modified = []
-    for idx in range(4, len(df)):
+    for idx in range(7, len(df)):  # Edge cases start at row 7
         row = df.iloc[idx, 1:].tolist()
         for col_idx in click_columns:
             if col_idx < len(row):
@@ -232,19 +235,19 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
         result.add_pass("Click Values Preserved", "All click values remain 'Click'")
 
     # === CHECK 12: Row descriptions include field names ===
-    edge_case_descriptions = df.iloc[4:, 0].tolist()
+    edge_case_descriptions = df.iloc[7:, 0].tolist()  # Edge cases start at row 7
     missing_field_name = []
 
-    # Get input field names from Description row
+    # Get input field names from Description row (row 1)
     input_columns = [i for i, a in enumerate(action_row) if str(a).lower() in ['input', 'change']]
-    field_names = [str(df.iloc[0, i+1]).lower() for i in input_columns if i+1 < len(df.columns)]
+    field_names = [str(df.iloc[1, i+1]).lower() for i in input_columns if i+1 < len(df.columns)]
 
     for idx, desc in enumerate(edge_case_descriptions):
         desc_lower = str(desc).lower()
         # Check if description contains any field name
         has_field = any(fn in desc_lower for fn in field_names if fn)
         if not has_field and desc_lower not in ['', 'nan']:
-            missing_field_name.append(f"Row {idx+4}: '{desc}'")
+            missing_field_name.append(f"Row {idx+7}: '{desc}'")
 
     if missing_field_name and len(missing_field_name) > len(edge_case_descriptions) * 0.3:
         result.add_warning(

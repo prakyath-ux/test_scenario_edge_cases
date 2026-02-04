@@ -10,11 +10,11 @@ __pycache__/
 .idea/
 
 # Runtime captures (sensitive data)
-data/captures/*.json
-data/captures/*.csv
-data/captures/*.jsonl
-data/captures/.recording_state.json
-data/captures/.live_capture.jsonl
+# data/captures/*.json
+# data/captures/*.csv
+# data/captures/*.jsonl
+# data/captures/.recording_state.json
+# data/captures/.live_capture.jsonl
 
 # Jupyter
 .ipynb_checkpoints/

@@ -133,6 +133,7 @@ with tab_upload:
     # -------- GENERATE SUB-TAB --------
     with gen_tab:
         st.markdown("**Upload recorded flow CSV to generate edge case test data**")
+        st.caption("Input: Vertical CSV from recorder (columns: Group, Element, Action, Property, Strategy, XPath, Value)")
 
         gen_file = st.file_uploader("Upload recorded flow CSV", type=['csv'], key="gen_upload")
 
@@ -159,7 +160,7 @@ with tab_upload:
                 return 'text_input'
 
             def transpose_to_company_format(df: pd.DataFrame) -> dict:
-                descriptions, actions, xpaths, values, field_types, groups = [], [], [], [], [], []
+                descriptions, actions, xpaths, values, field_types, groups, strategies, properties = [], [], [], [], [], [], [], []
 
                 for _, row in df.iterrows():
                     element = row.get('Element', row.get('Label', ''))
@@ -167,20 +168,27 @@ with tab_upload:
                     value = row.get('Value', '')
                     xpath = row.get('XPath', '')
                     group = row.get('Group', '')
+                    strategy = row.get('Strategy', '')
+                    prop = row.get('Property', '')
 
                     if pd.isna(value): value = ''
                     if pd.isna(element): element = ''
+                    if pd.isna(strategy): strategy = ''
+                    if pd.isna(prop): prop = ''
 
                     descriptions.append(element)
                     actions.append(action.lower())
                     xpaths.append(xpath)
-                    groups.append(group)
+                    groups.append(group if not pd.isna(group) else '')
+                    strategies.append(strategy)
+                    properties.append(prop)
                     values.append('Click' if action.lower() == 'click' else str(value))
                     field_types.append(classify_field(element, action, value))
 
                 return {
                     'descriptions': descriptions, 'actions': actions, 'xpaths': xpaths,
-                    'values': values, 'field_types': field_types, 'groups': groups
+                    'values': values, 'field_types': field_types, 'groups': groups,
+                    'strategies': strategies, 'properties': properties
                 }
 
             def get_text_input_fields(transposed: dict) -> list:
@@ -267,8 +275,11 @@ firstName|||Tests firstName validation - empty value should trigger required fie
 
             def create_output_dataframe(transposed: dict, edge_case_rows: list) -> pd.DataFrame:
                 rows = [
+                    ['Group'] + transposed['groups'],
                     ['Description'] + transposed['descriptions'],
                     ['Action'] + transposed['actions'],
+                    ['Property'] + transposed['properties'],
+                    ['Strategy'] + transposed['strategies'],
                     ['XPath'] + transposed['xpaths'],
                     ['Perfect_Template (Valid Flow)'] + transposed['values']
                 ]
@@ -278,7 +289,7 @@ firstName|||Tests firstName validation - empty value should trigger required fie
 
             def create_description_summary(edge_case_rows: list) -> pd.DataFrame:
                 return pd.DataFrame([{
-                    'Row': f'Row {i + 5}',
+                    'Row': f'Row {i + 8}',  # 7 header rows + 1 for 1-indexing
                     'Target Field': er['target_field'],
                     'Group/Section': er['group'],
                     'Test Description': er['description']
@@ -342,22 +353,87 @@ firstName|||Tests firstName validation - empty value should trigger required fie
                         st.dataframe(summary_df, use_container_width=True, height=300)
 
                         st.subheader("Generated Test Data")
-                        st.dataframe(output_df, use_container_width=True, height=400)
+
+                        # View toggle for generated data
+                        gen_view_mode = st.radio(
+                            "View Mode:",
+                            ["Horizontal (Company Format)", "Vertical (Standard)"],
+                            horizontal=True,
+                            key="gen_view_mode"
+                        )
+
+                        if gen_view_mode == "Horizontal (Company Format)":
+                            st.dataframe(output_df, use_container_width=True, height=400, hide_index=True)
+                        else:
+                            # Convert to vertical format for viewing
+                            # Row indices: 0=Group, 1=Description, 2=Action, 3=Property, 4=Strategy, 5=XPath, 6=Values
+                            vertical_rows = []
+                            if len(output_df) >= 7:
+                                groups = output_df.iloc[0, 1:].tolist()
+                                descriptions = output_df.iloc[1, 1:].tolist()
+                                actions = output_df.iloc[2, 1:].tolist()
+                                properties = output_df.iloc[3, 1:].tolist()
+                                strategies = output_df.iloc[4, 1:].tolist()
+                                xpaths = output_df.iloc[5, 1:].tolist()
+                                values = output_df.iloc[6, 1:].tolist()
+
+                                for i in range(len(descriptions)):
+                                    vertical_rows.append({
+                                        'Group': groups[i],
+                                        'Element': descriptions[i],
+                                        'Action': actions[i],
+                                        'Property': properties[i],
+                                        'Strategy': strategies[i],
+                                        'XPath': xpaths[i],
+                                        'Value': values[i]
+                                    })
+
+                            vertical_df = pd.DataFrame(vertical_rows)
+                            st.dataframe(vertical_df, use_container_width=True, height=400)
 
                         # Downloads
                         st.divider()
-                        col1, col2 = st.columns(2)
+                        col1, col2, col3 = st.columns(3)
                         with col1:
                             st.download_button(
-                                "Download Test Data (CSV)",
+                                "📥 Company Format CSV",
                                 output_df.to_csv(index=False, header=False),
-                                file_name="edge_case_test_data.csv",
+                                file_name="edge_case_test_data_company.csv",
                                 mime="text/csv",
                                 use_container_width=True
                             )
                         with col2:
+                            # Create vertical CSV from the data
+                            vertical_export = []
+                            if len(output_df) >= 7:
+                                groups = output_df.iloc[0, 1:].tolist()
+                                descriptions = output_df.iloc[1, 1:].tolist()
+                                actions = output_df.iloc[2, 1:].tolist()
+                                properties = output_df.iloc[3, 1:].tolist()
+                                strategies = output_df.iloc[4, 1:].tolist()
+                                xpaths = output_df.iloc[5, 1:].tolist()
+                                values = output_df.iloc[6, 1:].tolist()
+                                for i in range(len(descriptions)):
+                                    vertical_export.append({
+                                        'Group': groups[i],
+                                        'Element': descriptions[i],
+                                        'Action': actions[i],
+                                        'Property': properties[i],
+                                        'Strategy': strategies[i],
+                                        'XPath': xpaths[i],
+                                        'Value': values[i]
+                                    })
+                            vert_df = pd.DataFrame(vertical_export)
                             st.download_button(
-                                "Download Descriptions (CSV)",
+                                "📥 Vertical CSV",
+                                vert_df.to_csv(index=False),
+                                file_name="edge_case_test_data_vertical.csv",
+                                mime="text/csv",
+                                use_container_width=True
+                            )
+                        with col3:
+                            st.download_button(
+                                "📥 Descriptions CSV",
                                 summary_df.to_csv(index=False),
                                 file_name="test_descriptions.csv",
                                 mime="text/csv",
@@ -390,6 +466,7 @@ firstName|||Tests firstName validation - empty value should trigger required fie
     # -------- VALIDATE SUB-TAB --------
     with val_tab:
         st.markdown("**Upload a generated edge case CSV to validate its structure**")
+        st.caption("Input: Horizontal CSV from generator (Company Format with rows: Group, Description, Action, etc.)")
 
         val_file = st.file_uploader("Upload edge case CSV to validate", type=['csv'], key="val_upload")
 

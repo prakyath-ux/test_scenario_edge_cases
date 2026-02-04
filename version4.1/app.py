@@ -10,6 +10,48 @@ import os
 
 st.set_page_config(page_title="XPath Analytics Recorder", page_icon="🎯", layout="wide")
 
+
+def transpose_to_company_format(entries):
+    """
+    Transpose vertical data to horizontal company format.
+
+    Input (vertical):
+        Each entry: {label, action, property, xpath, values, strategy, group}
+
+    Output (horizontal):
+        Row 1: Group       | (blank for assignment) | ...
+        Row 2: Description | Element1 | Element2 | ...
+        Row 3: Action      | click    | input    | ...
+        Row 4: Property    | text     | text     | ...
+        Row 5: Strategy    | id       | name     | ...
+        Row 6: XPath       | //*[...]| //*[...] | ...
+        Row 7: Value       | Click   | JOHN     | ...
+    """
+    if not entries:
+        return pd.DataFrame()
+
+    # Build column headers from labels
+    labels = [e["label"] for e in entries]
+    groups = [e.get("group", "") for e in entries]
+    actions = [e["action"] for e in entries]
+    properties = [e.get("property", "") for e in entries]
+    strategies = [e.get("strategy", "") for e in entries]
+    xpaths = [e["xpath"] for e in entries]
+    values = ["Click" if e["action"] == "click" else e.get("values", "") for e in entries]
+
+    # Create transposed rows
+    rows = [
+        ["Group"] + groups,
+        ["Description"] + labels,
+        ["Action"] + actions,
+        ["Property"] + properties,
+        ["Strategy"] + strategies,
+        ["XPath"] + xpaths,
+        ["Value"] + values
+    ]
+
+    return pd.DataFrame(rows)
+
 # CSS Styling
 st.markdown("""
 <style>
@@ -238,6 +280,9 @@ if st.session_state.recording:
     # Display settings
     max_entries = st.slider("Show last N entries", 10, 2000, 1000)
 
+    # View toggle
+    view_mode = st.radio("View Mode:", ["Vertical (Standard)", "Horizontal (Company Format)"], horizontal=True)
+
     st.markdown("---")
 
     # Load and display live data
@@ -285,9 +330,9 @@ if st.session_state.recording:
             st.markdown(f"##### Captured: {len(entries)} elements")
 
             metric_col1, metric_col2, metric_col3, metric_col4 = st.columns(4)
-            clicks = sum(1 for e in entries if e["action"] == "click")
-            inputs = sum(1 for e in entries if e["action"] != "click")
-            ungrouped = sum(1 for e in entries if e["group"] == "")
+            clicks = sum(1 for e in entries if e.get("action", "") == "click")
+            inputs = sum(1 for e in entries if e.get("action", "") != "click")
+            ungrouped = sum(1 for e in entries if e.get("group", "") == "")
             metric_col1.metric("Total", len(entries))
             metric_col2.metric("Clicks", clicks)
             metric_col3.metric("Inputs", inputs)
@@ -295,37 +340,67 @@ if st.session_state.recording:
 
             # Show last N entries
             recent_entries = entries[-max_entries:]
-            df = pd.DataFrame(recent_entries)
 
-            # Reorder columns - Group first, Value last for visibility
-            display_cols = ["group", "label", "action", "strategy", "xpath", "values"]
-            df = df[[c for c in display_cols if c in df.columns]]
-            df.columns = ["Group", "Element", "Action", "Strategy", "XPath", "Value"]
-
-            st.dataframe(df, use_container_width=True, height=400)
+            # Display based on view mode
+            if view_mode == "Vertical (Standard)":
+                df = pd.DataFrame(recent_entries)
+                # Reorder columns - Group first, Value last for visibility
+                display_cols = ["group", "label", "action", "property", "strategy", "xpath", "values"]
+                available_cols = [c for c in display_cols if c in df.columns]
+                if available_cols:
+                    df = df[available_cols]
+                    # Rename columns dynamically based on what's available
+                    col_names = {"group": "Group", "label": "Element", "action": "Action",
+                                 "property": "Property", "strategy": "Strategy", "xpath": "XPath", "values": "Value"}
+                    df.columns = [col_names.get(c, c) for c in available_cols]
+                st.dataframe(df, use_container_width=True, height=400)
+            else:
+                # Horizontal (Company Format) - transposed view
+                transposed_df = transpose_to_company_format(recent_entries)
+                if not transposed_df.empty:
+                    st.dataframe(transposed_df, use_container_width=True, height=250, hide_index=True)
+                else:
+                    st.info("No data to display in horizontal format")
 
             # Download current section data
             st.markdown("##### Download Current Section")
-            download_col1, download_col2 = st.columns(2)
+            download_col1, download_col2, download_col3 = st.columns(3)
 
-            # Prepare CSV for download (in the format expected by Test Data generator)
+            # Prepare vertical CSV for download
             export_df = pd.DataFrame(entries)
-            export_cols = ["group", "label", "action", "strategy", "xpath", "values"]
-            export_df = export_df[[c for c in export_cols if c in export_df.columns]]
-            export_df.columns = ["Group", "Element", "Action", "Strategy", "XPath", "Value"]
+            export_cols = ["group", "label", "action", "property", "strategy", "xpath", "values"]
+            available_export_cols = [c for c in export_cols if c in export_df.columns]
+            if available_export_cols:
+                export_df = export_df[available_export_cols]
+                col_names = {"group": "Group", "label": "Element", "action": "Action",
+                             "property": "Property", "strategy": "Strategy", "xpath": "XPath", "values": "Value"}
+                export_df.columns = [col_names.get(c, c) for c in available_export_cols]
+
+            # Prepare transposed CSV for download
+            transposed_export = transpose_to_company_format(entries)
 
             with download_col1:
                 csv_data = export_df.to_csv(index=False)
                 st.download_button(
-                    "📥 Download CSV",
+                    "📥 Vertical CSV",
                     csv_data,
-                    file_name=f"section_{datetime.now().strftime('%H%M%S')}.csv",
+                    file_name=f"section_{datetime.now().strftime('%H%M%S')}_vertical.csv",
                     mime="text/csv",
                     use_container_width=True
                 )
 
             with download_col2:
-                st.caption("Download this section, then click 'Clear Data' to start next section")
+                transposed_csv = transposed_export.to_csv(index=False, header=False)
+                st.download_button(
+                    "📥 Company Format CSV",
+                    transposed_csv,
+                    file_name=f"section_{datetime.now().strftime('%H%M%S')}_company.csv",
+                    mime="text/csv",
+                    use_container_width=True
+                )
+
+            with download_col3:
+                st.caption("Vertical: for Test Data Generator | Company: for QA team")
 
             st.markdown("---")
 
@@ -335,6 +410,7 @@ if st.session_state.recording:
             st.code(f"""Group:    {latest.get('group', '')}
 Element:  {latest['label']}
 Action:   {latest['action']}
+Property: {latest.get('property', '')}
 Value:    {latest.get('values', '')}
 XPath:    {latest['xpath']}
 Strategy: {latest['strategy']}""")

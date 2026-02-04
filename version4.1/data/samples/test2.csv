@@ -1,0 +1,55 @@
+Group,Element,Action,Property,Strategy,XPath,Value
+Personal Info / Documents,firstName,click,text,id,"//*[@id=""firstName""]",
+Personal Info / Documents,firstName,Input,text,id,"//*[@id=""firstName""]",CLARK
+Personal Info / Documents,email,click,email,id,"//*[@id=""email""]",
+Personal Info / Documents,email,Input,email,id,"//*[@id=""email""]",CLARK@GMAIL.COM
+Personal Info / Documents,middleName,click,text,id,"//*[@id=""middleName""]",
+Personal Info / Documents,middleName,Input,text,id,"//*[@id=""middleName""]",S
+Personal Info / Documents,mobileNumber,click,tel,id,"//*[@id=""mobileNumber""]",
+Personal Info / Documents,mobileNumber,Input,tel,id,"//*[@id=""mobileNumber""]",745-8962
+Personal Info / Documents,lastName,click,text,id,"//*[@id=""lastName""]",
+Personal Info / Documents,lastName,Input,text,id,"//*[@id=""lastName""]",KENT
+Personal Info / Documents,Select Branch,click,submit,data-testid,"//*[@data-testid=""dropdown-button""]",
+Personal Info / Documents,200 - TECU - COUVA BRANCH,click,li,data-testid,"//*[@data-testid=""option-1""]",
+Personal Info / Documents,Add profile picture,click,submit,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Add profile picture"")]",
+Personal Info / Documents,Upload,click,label,data-testid,"//*[@data-testid=""upload-button""]",
+Personal Info / Documents,file-upload,click,file,id,"//*[@id=""file-upload""]",
+Personal Info / Documents,file-upload,Input,file,id,"//*[@id=""file-upload""]",C:\fakepath\Screenshot 2026-01-27 at 1.02.56 PM.png
+Personal Info / Documents,Save & Continue,click,submit,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]",
+Personal Info / Documents,otp-input-0,click,text | max:1,id,"//*[@id=""otp-input-0""]",
+Personal Info / Documents,otp-input-0,Input,text | max:1,id,"//*[@id=""otp-input-0""]",1
+Personal Info / Documents,otp-input-1,Input,text | max:1,id,"//*[@id=""otp-input-1""]",2
+Personal Info / Documents,otp-input-2,Input,text | max:1,id,"//*[@id=""otp-input-2""]",1
+Personal Info / Documents,otp-input-3,Input,text | max:1,id,"//*[@id=""otp-input-3""]",2
+Personal Info / Documents,otp-input-4,Input,text | max:1,id,"//*[@id=""otp-input-4""]",1
+Personal Info / Documents,otp-input-5,Input,text | max:1,id,"//*[@id=""otp-input-5""]",2
+Personal Info / Documents,Verify OTP,click,submit,data-testid,"//*[@data-testid=""submit-button""]",
+Personal Info / Documents,Choose an option,click,submit,data-testid,"//*[@data-testid=""dropdown-button""]",
+Personal Info / Documents,Passport,click,li,data-testid,"//*[@data-testid=""option-0""]",
+Personal Info / Documents,Select File,click,label,data-testid,"//*[@data-testid=""file-upload-label""]",
+Personal Info / Documents,upload-front-input,click,file,id,"//*[@id=""upload-front-input""]",
+Personal Info / Documents,upload-front-input,Input,file,id,"//*[@id=""upload-front-input""]",C:\fakepath\AVINASH_PASS.png
+Personal Info / Documents,Continue,click,submit,data-testid,"//*[@data-testid=""continue-button""]",
+Personal Info / Documents,Choose an option,click,submit,data-testid,"//*[@data-testid=""dropdown-button""]",
+Personal Info / Documents,National Identification Card,click,li,data-testid,"//*[@data-testid=""option-1""]",
+Personal Info / Documents,Upload Front of ID,click,label,data-testid,"//*[@data-testid=""file-upload-label""]",
+Personal Info / Documents,upload-front-input,click,file,id,"//*[@id=""upload-front-input""]",
+Personal Info / Documents,upload-front-input,Input,file,id,"//*[@id=""upload-front-input""]",C:\fakepath\DAVID_N_F.png
+Personal Info / Documents,Upload Back of ID,click,label,data-testid,"//*[@data-testid=""file-upload-back-label""]",
+Personal Info / Documents,upload-back-input,click,file,id,"//*[@id=""upload-back-input""]",
+Personal Info / Documents,upload-back-input,Input,file,id,"//*[@id=""upload-back-input""]",C:\fakepath\DAVID_N_B.png
+Personal Info / Documents,Continue,click,submit,data-testid,"//*[@data-testid=""continue-button""]",
+Personal Info / Documents,Choose an option,click,submit,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/button[1],
+Personal Info / Documents,FLOW BILL,click,li,data-testid,"//*[@data-testid=""option-0""]",
+Personal Info / Documents,Select File,click,label,data-testid,"//*[@data-testid=""file-upload-label""]",
+Personal Info / Documents,upload-front-input,click,file,id,"//*[@id=""upload-front-input""]",
+Personal Info / Documents,upload-front-input,Input,file,id,"//*[@id=""upload-front-input""]",C:\fakepath\FlowBill.jpg
+Personal Info / Documents,mailingCity,click,text | max:50,id,"//*[@id=""mailingCity""]",
+Personal Info / Documents,mailingCity,Input,text | max:50,id,"//*[@id=""mailingCity""]",TRINCITY
+Personal Info / Documents,div,click,div,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/div[1]/div[1],
+Personal Info / Documents,permanentAddressSameAsMailing,click,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/input[1],
+Personal Info / Documents,permanentAddressSameAsMailing,Input,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[1]/label[1]/input[1],true
+Personal Info / Documents,div,click,div,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/div[1]/div[1],
+Personal Info / Documents,utilityDocOption,click,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/input[1],
+Personal Info / Documents,utilityDocOption,Input,radio,absolute,/html/body/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[4]/div[3]/div[2]/div[1]/label[1]/input[1],true
+Personal Info / Documents,Save and Continue,click,submit,data-testid,"//*[@data-testid=""save-and-continue-button""]",

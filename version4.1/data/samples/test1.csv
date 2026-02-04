@@ -1,0 +1,26 @@
+Group,Element,Action,Property,Strategy,XPath,Value
+,firstName,click,text,id,"//*[@id=""firstName""]",
+,firstName,Input,text,id,"//*[@id=""firstName""]",PRAKYATHHH
+,email,click,email,id,"//*[@id=""email""]",
+,email,Input,email,id,"//*[@id=""email""]",PR12321@GMAIL.COM
+,middleName,click,text,id,"//*[@id=""middleName""]",
+,middleName,Input,text,id,"//*[@id=""middleName""]",MM
+,mobileNumber,click,tel,id,"//*[@id=""mobileNumber""]",
+,mobileNumber,Input,tel,id,"//*[@id=""mobileNumber""]",456-7812
+,lastName,click,text,id,"//*[@id=""lastName""]",
+,lastName,Input,text,id,"//*[@id=""lastName""]",CHANDRANN
+,Select Branch,click,submit,data-testid,"//*[@data-testid=""dropdown-button""]",
+,100 - TECU - MARABELLA BRANCH,click,li,data-testid,"//*[@data-testid=""option-0""]",
+,Add profile picture,click,submit,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Add profile picture"")]",
+,Upload,click,label,data-testid,"//*[@data-testid=""upload-button""]",
+,file-upload,click,file,id,"//*[@id=""file-upload""]",
+,file-upload,Input,file,id,"//*[@id=""file-upload""]",C:\fakepath\Screenshot 2026-01-27 at 1.02.56 PM.png
+,Save & Continue,click,submit,data-testid+text,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]",
+,otp-input-0,click,text | max:1,id,"//*[@id=""otp-input-0""]",
+,otp-input-0,Input,text | max:1,id,"//*[@id=""otp-input-0""]",1
+,otp-input-1,Input,text | max:1,id,"//*[@id=""otp-input-1""]",2
+,otp-input-2,Input,text | max:1,id,"//*[@id=""otp-input-2""]",1
+,otp-input-3,Input,text | max:1,id,"//*[@id=""otp-input-3""]",2
+,otp-input-4,Input,text | max:1,id,"//*[@id=""otp-input-4""]",1
+,otp-input-5,Input,text | max:1,id,"//*[@id=""otp-input-5""]",2
+,Verify OTP,click,submit,data-testid,"//*[@data-testid=""submit-button""]",
