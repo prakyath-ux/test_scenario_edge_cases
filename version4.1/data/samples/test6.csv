@@ -1,0 +1,26 @@
+Step,Group,Element,Property,Action,XPath,Value
+1,personal data,firstName,text,click,"//*[@id=""firstName""]",
+2,personal data,firstName,text,Input,"//*[@id=""firstName""]",PRAKYYYATH
+3,personal data,email,email,click,"//*[@id=""email""]",
+4,personal data,email,email,Input,"//*[@id=""email""]",PPP@GMAIL.COM
+5,personal data,middleName,text,click,"//*[@id=""middleName""]",
+6,personal data,middleName,text,Input,"//*[@id=""middleName""]",M
+7,personal data,mobileNumber,tel,click,"//*[@id=""mobileNumber""]",
+8,personal data,mobileNumber,tel,Input,"//*[@id=""mobileNumber""]",453-2782
+9,personal data,lastName,text,click,"//*[@id=""lastName""]",
+10,personal data,lastName,text,Input,"//*[@id=""lastName""]",CHANDRAN
+11,personal data,Select Branch,submit,click,"//*[@data-testid=""dropdown-button""]",
+12,personal data,100 - TECU - MARABELLA BRANCH,li,click,"//*[@data-testid=""option-0""]",
+13,personal data,Add profile picture,submit,click,"//*[@data-testid=""button"" and contains(., ""Add profile picture"")]",
+14,personal data,Upload,label,click,"//*[@data-testid=""upload-button""]",
+15,personal data,file-upload,file,click,"//*[@id=""file-upload""]",
+16,personal data,file-upload,file,Input,"//*[@id=""file-upload""]",C:\fakepath\Screenshot 2026-01-27 at 1.02.56 PM.png
+17,personal data,Save & Continue,submit,click,"//*[@data-testid=""button"" and contains(., ""Save & Continue"")]",
+18,personal data,otp-input-0,text | max:1,click,"//*[@id=""otp-input-0""]",
+19,personal data,otp-input-0,text | max:1,Input,"//*[@id=""otp-input-0""]",1
+20,personal data,otp-input-1,text | max:1,Input,"//*[@id=""otp-input-1""]",2
+21,personal data,otp-input-2,text | max:1,Input,"//*[@id=""otp-input-2""]",1
+22,personal data,otp-input-3,text | max:1,Input,"//*[@id=""otp-input-3""]",2
+23,personal data,otp-input-4,text | max:1,Input,"//*[@id=""otp-input-4""]",1
+24,personal data,otp-input-5,text | max:1,Input,"//*[@id=""otp-input-5""]",2
+25,personal data,Verify OTP,submit,click,"//*[@data-testid=""submit-button""]",

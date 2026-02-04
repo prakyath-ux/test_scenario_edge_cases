@@ -44,8 +44,8 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
     - Row 0: Steps (1, 2, 3, ...)
     - Row 1: Group (section/group names)
     - Row 2: Elements (element names)
-    - Row 3: Action (click/input)
-    - Row 4: Property (element types)
+    - Row 3: Property (element types)
+    - Row 4: Action (click/input)
     - Row 5: XPath (locators)
     - Row 6: Perfect_Template (all valid values)
     - Row 7+: Value_fieldName (edge case test rows)
@@ -82,7 +82,7 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
 
     # === CHECK 3: Header row labels ===
     first_col = df.iloc[:, 0].tolist()
-    expected_headers = ["Steps", "Group", "Elements", "Action", "Property", "XPath", "Perfect_Template"]
+    expected_headers = ["Steps", "Group", "Elements", "Property", "Action", "XPath", "Perfect_Template"]
 
     header_issues = []
     for i, expected in enumerate(expected_headers):
@@ -96,7 +96,7 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
         result.add_pass("Header Row Labels", "All 7 header rows found (Steps, Group, Elements, Action, Property, XPath, Perfect_Template)")
 
     # === CHECK 4: Action row values ===
-    action_row = df.iloc[3, 1:].tolist()  # Row 3 is Action (skip first column)
+    action_row = df.iloc[4, 1:].tolist()  # Row 4 is Action (skip first column)
     valid_actions = {'click', 'input', 'change'}
     invalid_actions = []
 
@@ -214,7 +214,7 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
         result.add_pass("Edge Case Count", "All edge case fields have 4 values")
 
     # === CHECK 11: Click values preserved ===
-    action_row = df.iloc[3, 1:].tolist()  # Row 3 is Action
+    action_row = df.iloc[4, 1:].tolist()  # Row 4 is Action
     click_columns = [i for i, a in enumerate(action_row) if str(a).lower() == 'click']
 
     click_modified = []
@@ -223,7 +223,8 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
         for col_idx in click_columns:
             if col_idx < len(row):
                 val = str(row[col_idx]).strip().lower()
-                if val != 'click' and not pd.isna(row[col_idx]):
+                # Accept 'click' or empty string for click columns
+                if val not in ['click', '', 'nan'] and not pd.isna(row[col_idx]):
                     click_modified.append(f"Row {idx}, Col {col_idx+1}")
 
     if click_modified:
@@ -232,7 +233,7 @@ def validate_edge_case_csv(df: pd.DataFrame) -> ValidationResult:
             f"Click columns modified in: {click_modified[:5]}"
         )
     else:
-        result.add_pass("Click Values Preserved", "All click values remain 'Click'")
+        result.add_pass("Click Values Preserved", "Click columns are empty or 'Click'")
 
     # === CHECK 12: Row names follow Value_fieldName pattern ===
     edge_case_row_names = df.iloc[7:, 0].tolist()  # Edge cases start at row 7
