@@ -1,5 +1,0 @@
-Label,XPath,Strategy,Matches,Action,Value,Property
-firstName,"//*[@id=""firstName""]",id,1,click,,text
-email,"//*[@id=""email""]",id,1,click,,email
-Middle Name (optional),"//div[contains(@class, ""md:order-3"")]",class,1,click,,div
-mobileNumber,"//*[@id=""mobileNumber""]",id,1,click,,tel
